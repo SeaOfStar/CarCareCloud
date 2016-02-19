@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sRg-7Q-lqj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="LlA-1C-U2r">
+            <objects>
+                <viewController id="sRg-7Q-lqj" customClass="LoginViewController" customModule="CarCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DOP-lO-6Qx"/>
+                        <viewControllerLayoutGuide type="bottom" id="P1x-Zh-L9X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0E5-E6-nFm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Q-mq-Vvl">
+                                <rect key="frame" x="270" y="280" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="YGC-xm-ve9"/>
+                                    <constraint firstAttribute="height" constant="40" id="tAm-PW-swF"/>
+                                </constraints>
+                                <state key="normal" title="登    录"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="sRg-7Q-lqj" eventType="touchUpInside" id="4UI-te-xvr"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z98-Me-wRl">
+                                <rect key="frame" x="40" y="210" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="siy-fj-kaM">
+                                <rect key="frame" x="40" y="160" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.94736842105263153" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="siy-fj-kaM" firstAttribute="trailing" secondItem="Z98-Me-wRl" secondAttribute="trailing" id="BGN-9o-du5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z98-Me-wRl" secondAttribute="trailing" constant="20" id="DCP-vf-Lwn"/>
+                            <constraint firstItem="Y6Q-mq-Vvl" firstAttribute="centerY" secondItem="0E5-E6-nFm" secondAttribute="centerY" id="Vr5-Q0-nzB"/>
+                            <constraint firstItem="Y6Q-mq-Vvl" firstAttribute="top" secondItem="Z98-Me-wRl" secondAttribute="bottom" constant="40" id="YSI-c0-gwf"/>
+                            <constraint firstItem="Z98-Me-wRl" firstAttribute="leading" secondItem="0E5-E6-nFm" secondAttribute="leadingMargin" constant="20" id="fbQ-e9-X1z"/>
+                            <constraint firstItem="siy-fj-kaM" firstAttribute="leading" secondItem="Z98-Me-wRl" secondAttribute="leading" id="oqc-xW-fC3"/>
+                            <constraint firstItem="Y6Q-mq-Vvl" firstAttribute="centerX" secondItem="0E5-E6-nFm" secondAttribute="centerX" id="sFw-ch-v2k"/>
+                            <constraint firstItem="Z98-Me-wRl" firstAttribute="top" secondItem="siy-fj-kaM" secondAttribute="bottom" constant="20" id="z7F-DV-hPN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="siy-fj-kaM" id="LTS-IH-gTx"/>
+                        <outlet property="password" destination="Z98-Me-wRl" id="zGv-Sl-1M3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nfx-ue-64N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="352"/>
+        </scene>
+    </scenes>
+</document>
