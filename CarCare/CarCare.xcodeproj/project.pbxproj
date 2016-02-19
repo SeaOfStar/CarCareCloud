@@ -29,6 +29,8 @@
 		F8013AC41C76B13100B1F2FC /* CocoaMQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABD1C76B13100B1F2FC /* CocoaMQTTMessage.swift */; };
 		F8013AC51C76B13100B1F2FC /* CocoaMQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABD1C76B13100B1F2FC /* CocoaMQTTMessage.swift */; };
 		F8013AC61C76B13100B1F2FC /* CocoaMQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABD1C76B13100B1F2FC /* CocoaMQTTMessage.swift */; };
+		F88385C61C76DDE700DA1875 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C51C76DDE700DA1875 /* DoorViewController.swift */; };
+		F88385C71C76DDE700DA1875 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C51C76DDE700DA1875 /* DoorViewController.swift */; };
 		F8B5CA6A1C75BC0200D74569 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B5CA691C75BC0200D74569 /* AppDelegate.swift */; };
 		F8B5CA6C1C75BC0200D74569 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B5CA6B1C75BC0200D74569 /* ViewController.swift */; };
 		F8B5CA6F1C75BC0200D74569 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CA6D1C75BC0200D74569 /* Main.storyboard */; };
@@ -73,6 +75,7 @@
 		F8013ABB1C76B13100B1F2FC /* CocoaMQTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaMQTT.swift; sourceTree = "<group>"; };
 		F8013ABC1C76B13100B1F2FC /* CocoaMQTTFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaMQTTFrame.swift; sourceTree = "<group>"; };
 		F8013ABD1C76B13100B1F2FC /* CocoaMQTTMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaMQTTMessage.swift; sourceTree = "<group>"; };
+		F88385C51C76DDE700DA1875 /* DoorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoorViewController.swift; sourceTree = "<group>"; };
 		F8B5CA661C75BC0200D74569 /* CarCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B5CA691C75BC0200D74569 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B5CA6B1C75BC0200D74569 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 		F8013AA61C76AEF800B1F2FC /* 主页面 */ = {
 			isa = PBXGroup;
 			children = (
+				F88385C51C76DDE700DA1875 /* DoorViewController.swift */,
 				F8B5CA6D1C75BC0200D74569 /* Main.storyboard */,
 				F8013AA71C76AF2200B1F2FC /* CarStatusViewController.swift */,
 			);
@@ -350,6 +354,7 @@
 			files = (
 				F8013AA01C75C0E900B1F2FC /* LoginViewController.swift in Sources */,
 				F8013AB71C76B07C00B1F2FC /* MSWeakTimer.m in Sources */,
+				F88385C61C76DDE700DA1875 /* DoorViewController.swift in Sources */,
 				F8B5CA6C1C75BC0200D74569 /* ViewController.swift in Sources */,
 				F8B5CA721C75BC0200D74569 /* CarCare.xcdatamodeld in Sources */,
 				F8013AA81C76AF2200B1F2FC /* CarStatusViewController.swift in Sources */,
@@ -389,6 +394,7 @@
 				F8013AC01C76B13100B1F2FC /* CocoaMQTT.swift in Sources */,
 				F8B5CA8D1C75BC0300D74569 /* CarCareUITests.swift in Sources */,
 				F8013AB91C76B07C00B1F2FC /* MSWeakTimer.m in Sources */,
+				F88385C71C76DDE700DA1875 /* DoorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

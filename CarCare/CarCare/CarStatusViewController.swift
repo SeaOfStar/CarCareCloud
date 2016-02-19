@@ -8,6 +8,14 @@
 
 import UIKit
 
+enum OnOff: String {
+    case OPEN, CLOSED
+
+    func on() -> Bool {
+        return self.rawValue == OPEN.rawValue
+    }
+}
+
 class CarStatusViewController: UIViewController {
 
     // IP & 端口信息
@@ -36,6 +44,10 @@ class CarStatusViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        if let token = app.clientID {
+            self.token = token
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -64,18 +76,57 @@ class CarStatusViewController: UIViewController {
     func reloadData() {
         // 更新画面
         print(coreData)
-    }
-    
 
-    /*
+        // 汽车数据
+        if let vehicleData = coreData?["vehicle"] {
+            reloadVehicleData(vehicleData as! [String : AnyObject])
+        }
+    }
+
+    // 车门画面
+    var door: DoorViewController!
+
+    // 控制车门信息
+    func reloadVehicleData(data: [String: AnyObject]) {
+        // 车门信息
+        NSLog("\(data)")
+
+        if let doorInfo = data["doors"] {
+
+            for (key, value) in doorInfo as! [String: String] {
+                let status = OnOff(rawValue: value)
+                let isOpen = status?.on()
+
+                switch key {
+                case "frontLeft":
+                    door.左前门 = isOpen
+
+                case "frontRight":
+                    door.右前门 = isOpen
+
+                case "rearLeft":
+                    door.左后门 = isOpen
+
+                case "rearRight":
+                    door.右后门 = isOpen
+
+                default:
+                    break
+                }
+            }
+        }
+    }
+
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "车门" {
+            self.door = segue.destinationViewController as! DoorViewController
+        }
     }
-    */
+
 
 }
 

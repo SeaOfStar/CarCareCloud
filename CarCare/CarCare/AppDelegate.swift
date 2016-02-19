@@ -112,9 +112,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func showMainScreen() {
         let mainStroyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let controller: CarStatusViewController = mainStroyBoard.instantiateInitialViewController() as! CarStatusViewController
-
-        controller.token = clientID
+        let controller = mainStroyBoard.instantiateInitialViewController()
+//        controller.token = clientID
 
         if window == nil {
             window = UIWindow(frame: UIScreen.mainScreen().bounds)
