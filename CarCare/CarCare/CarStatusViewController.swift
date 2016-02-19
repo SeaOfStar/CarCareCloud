@@ -12,6 +12,7 @@ enum OnOff: String {
     case OPEN, CLOSED, LOCKED
     case CLOSING, OPENING
     case ON, OFF
+//    case PARKING, RELEASED
 
     func on() -> Bool {
         return (self.rawValue == OPEN.rawValue) || (self.rawValue == ON.rawValue)
@@ -77,11 +78,27 @@ class CarStatusViewController: UIViewController {
 
     func reloadData() {
         // 更新画面
-        print(coreData)
+//        print(coreData)
 
         // 汽车数据
         if let vehicleData = coreData?["vehicle"] {
             reloadVehicleData(vehicleData as! [String : AnyObject])
+        }
+
+        // 驾驶信息
+        if let driveData = coreData?["drive"] {
+            reloadDriveData(driveData as! [String: AnyObject])
+        }
+    }
+
+    // MARK: 驾驶信息
+    func reloadDriveData(driveInfo : [String : AnyObject]) {
+//        NSLog("\(driveInfo)")
+
+//            parkingBrake = PARKING;
+
+        if let parkingBrake = driveInfo["parkingBrake"] {
+            dashboard.手刹 = (parkingBrake as! String == "PARKING")
         }
     }
 
@@ -91,7 +108,6 @@ class CarStatusViewController: UIViewController {
     // 控制车门信息
     func reloadVehicleData(data: [String: AnyObject]) {
         // 车门信息
-        NSLog("\(data)")
 
         if let doorInfo = data["doors"] {
 
