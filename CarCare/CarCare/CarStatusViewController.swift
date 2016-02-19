@@ -9,10 +9,12 @@
 import UIKit
 
 enum OnOff: String {
-    case OPEN, CLOSED
+    case OPEN, CLOSED, LOCKED
+    case CLOSING, OPENING
+    case ON, OFF
 
     func on() -> Bool {
-        return self.rawValue == OPEN.rawValue
+        return (self.rawValue == OPEN.rawValue) || (self.rawValue == ON.rawValue)
     }
 }
 
@@ -83,7 +85,7 @@ class CarStatusViewController: UIViewController {
         }
     }
 
-    // 车门画面
+    // MARK:车门
     var door: DoorViewController!
 
     // 控制车门信息
@@ -115,6 +117,23 @@ class CarStatusViewController: UIViewController {
                 }
             }
         }
+
+        // 灯光信息
+        if let lightInfo = data["lights"] {
+            reloadLight(lightInfo as! [String : AnyObject])
+        }
+
+    }
+
+    // MARK: 仪表盘
+    var dashboard: DashboardViewController!
+
+    func reloadLight(lightInfo: [String: AnyObject]) {
+
+        if let illumination = lightInfo["illumination"] {
+            // 仪表灯
+            dashboard.仪表盘灯 = OnOff(rawValue: illumination as! String)?.on()
+        }
     }
 
 
@@ -122,11 +141,20 @@ class CarStatusViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "车门" {
-            self.door = segue.destinationViewController as! DoorViewController
+
+        if let idString = segue.identifier {
+            switch idString {
+            case "车门":
+                self.door = segue.destinationViewController as! DoorViewController
+
+            case "仪表盘":
+                self.dashboard = segue.destinationViewController as! DashboardViewController
+
+            default:
+                break
+            }
         }
     }
-
 
 }
 

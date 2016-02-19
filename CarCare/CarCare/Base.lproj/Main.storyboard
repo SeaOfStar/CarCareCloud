@@ -18,8 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashboard_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Kbs-sY-Otq">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUr-GS-8ZC">
                                 <rect key="frame" x="220" y="440" width="160" height="160"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="FQR-0Q-ZE1"/>
                                     <constraint firstAttribute="width" secondItem="OUr-GS-8ZC" secondAttribute="height" multiplier="1:1" id="Yr1-Ym-wFb"/>
@@ -28,11 +33,27 @@
                                     <segue destination="mO5-7t-TIk" kind="embed" identifier="车门" id="NuH-IH-OJz"/>
                                 </connections>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fB3-K7-0Xd">
+                                <rect key="frame" x="20" y="72" width="560" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="V2z-fS-44d"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="ZrE-fU-3na" kind="embed" identifier="仪表盘" id="3u7-Wj-chj"/>
+                                </connections>
+                            </containerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.92448788879999999" green="0.61235290769999995" blue="0.59966623779999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OUr-GS-8ZC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CNw-Lf-4RJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kbs-sY-Otq" secondAttribute="bottom" id="Jv0-ed-E1a"/>
+                            <constraint firstItem="Kbs-sY-Otq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Muw-fT-Reg"/>
+                            <constraint firstItem="fB3-K7-0Xd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="c5U-BV-Q55"/>
+                            <constraint firstAttribute="trailing" secondItem="Kbs-sY-Otq" secondAttribute="trailing" id="d6V-d1-V7C"/>
+                            <constraint firstItem="Kbs-sY-Otq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dYs-CT-6rd"/>
+                            <constraint firstAttribute="trailing" secondItem="fB3-K7-0Xd" secondAttribute="trailing" constant="20" id="i7Y-6p-sZb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OUr-GS-8ZC" secondAttribute="bottom" id="naH-HR-x6r"/>
+                            <constraint firstItem="fB3-K7-0Xd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="qXD-bh-ysR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tR6-bf-51V"/>
@@ -140,7 +161,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="VZz-m0-rkh" secondAttribute="bottom" id="54D-ly-exX"/>
                                     <constraint firstAttribute="bottom" secondItem="ZAv-zv-8JB" secondAttribute="bottom" id="83Y-xS-jBb"/>
@@ -157,7 +178,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bFG-4I-Ugx" firstAttribute="leading" secondItem="vaB-Bg-UVS" secondAttribute="leading" id="QKo-DL-lrv"/>
                             <constraint firstItem="bFG-4I-Ugx" firstAttribute="top" secondItem="Qf2-i7-3au" secondAttribute="bottom" id="bb8-bM-hr3"/>
@@ -198,6 +219,126 @@
             </objects>
             <point key="canvasLocation" x="402" y="310"/>
         </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="2ry-19-ieq">
+            <objects>
+                <viewController id="ZrE-fU-3na" customClass="DashboardViewController" customModule="CarCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WUM-Mb-m0s">
+                        <rect key="frame" x="0.0" y="0.0" width="560" height="64"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAs-YY-Wsg">
+                                <rect key="frame" x="336" y="0.0" width="112" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKI-hX-oWx">
+                                        <rect key="frame" x="24" y="0.0" width="64" height="64"/>
+                                        <state key="normal" image="engine_trouble_off"/>
+                                        <state key="highlighted" image="engine_trouble_on"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dKI-hX-oWx" firstAttribute="centerY" secondItem="gAs-YY-Wsg" secondAttribute="centerY" id="TKm-NI-ZPO"/>
+                                    <constraint firstItem="dKI-hX-oWx" firstAttribute="centerX" secondItem="gAs-YY-Wsg" secondAttribute="centerX" id="uWf-NI-YGc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DhC-RP-BGP">
+                                <rect key="frame" x="0.0" y="0.0" width="112" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWm-SC-2G5">
+                                        <rect key="frame" x="24" y="0.0" width="64" height="64"/>
+                                        <state key="normal" image="handbrake_off" backgroundImage="handbrake_off"/>
+                                        <state key="highlighted" image="handbrake_on" backgroundImage="handbrake_on"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="LWm-SC-2G5" firstAttribute="centerX" secondItem="DhC-RP-BGP" secondAttribute="centerX" id="5R6-RH-DoK"/>
+                                    <constraint firstItem="LWm-SC-2G5" firstAttribute="centerY" secondItem="DhC-RP-BGP" secondAttribute="centerY" id="q0Z-uB-zNP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyJ-G1-Cys">
+                                <rect key="frame" x="112" y="0.0" width="112" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEt-ph-A6u">
+                                        <rect key="frame" x="24" y="0.0" width="64" height="64"/>
+                                        <state key="normal" image="engine_oil_off"/>
+                                        <state key="highlighted" image="engine_oil_on"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="aEt-ph-A6u" firstAttribute="centerX" secondItem="fyJ-G1-Cys" secondAttribute="centerX" id="Bdm-XA-vxZ"/>
+                                    <constraint firstItem="aEt-ph-A6u" firstAttribute="centerY" secondItem="fyJ-G1-Cys" secondAttribute="centerY" id="lgC-Mb-j0D"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crw-Mj-j1E">
+                                <rect key="frame" x="224" y="0.0" width="112" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t54-8p-qIr">
+                                        <rect key="frame" x="24" y="0.0" width="64" height="64"/>
+                                        <state key="normal" image="charging_off"/>
+                                        <state key="highlighted" image="charging_on"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="t54-8p-qIr" firstAttribute="centerX" secondItem="crw-Mj-j1E" secondAttribute="centerX" id="CcN-ty-Afu"/>
+                                    <constraint firstItem="t54-8p-qIr" firstAttribute="centerY" secondItem="crw-Mj-j1E" secondAttribute="centerY" id="Iap-Bl-ctv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTM-m8-nkq">
+                                <rect key="frame" x="448" y="0.0" width="112" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVL-j9-oO9">
+                                        <rect key="frame" x="24" y="0.0" width="64" height="64"/>
+                                        <state key="normal" image="fuel_off"/>
+                                        <state key="highlighted" image="fuel_on"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="JVL-j9-oO9" firstAttribute="centerX" secondItem="sTM-m8-nkq" secondAttribute="centerX" id="opm-sf-Kjn"/>
+                                    <constraint firstItem="JVL-j9-oO9" firstAttribute="centerY" secondItem="sTM-m8-nkq" secondAttribute="centerY" id="rsy-zX-4rE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fyJ-G1-Cys" firstAttribute="leading" secondItem="DhC-RP-BGP" secondAttribute="trailing" id="0oJ-B0-zjm"/>
+                            <constraint firstItem="crw-Mj-j1E" firstAttribute="top" secondItem="WUM-Mb-m0s" secondAttribute="top" id="2UP-W1-f75"/>
+                            <constraint firstItem="DhC-RP-BGP" firstAttribute="leading" secondItem="WUM-Mb-m0s" secondAttribute="leading" id="3cj-Yd-zfl"/>
+                            <constraint firstItem="DhC-RP-BGP" firstAttribute="top" secondItem="WUM-Mb-m0s" secondAttribute="top" id="8fV-Nk-wmp"/>
+                            <constraint firstItem="crw-Mj-j1E" firstAttribute="leading" secondItem="fyJ-G1-Cys" secondAttribute="trailing" id="9Uk-eY-nAc"/>
+                            <constraint firstItem="sTM-m8-nkq" firstAttribute="leading" secondItem="gAs-YY-Wsg" secondAttribute="trailing" id="BE7-jR-Dfr"/>
+                            <constraint firstItem="gAs-YY-Wsg" firstAttribute="top" secondItem="WUM-Mb-m0s" secondAttribute="top" id="BzB-jc-l1g"/>
+                            <constraint firstItem="fyJ-G1-Cys" firstAttribute="width" secondItem="DhC-RP-BGP" secondAttribute="width" id="Fvg-dn-FF4"/>
+                            <constraint firstAttribute="bottom" secondItem="sTM-m8-nkq" secondAttribute="bottom" id="GF4-aj-IxT"/>
+                            <constraint firstItem="sTM-m8-nkq" firstAttribute="width" secondItem="DhC-RP-BGP" secondAttribute="width" id="Qeg-4K-AVB"/>
+                            <constraint firstItem="crw-Mj-j1E" firstAttribute="width" secondItem="DhC-RP-BGP" secondAttribute="width" id="QkL-Su-Fjs"/>
+                            <constraint firstAttribute="bottom" secondItem="crw-Mj-j1E" secondAttribute="bottom" id="SBu-pb-ZkL"/>
+                            <constraint firstAttribute="bottom" secondItem="gAs-YY-Wsg" secondAttribute="bottom" id="eZQ-Ek-Uuz"/>
+                            <constraint firstItem="fyJ-G1-Cys" firstAttribute="top" secondItem="WUM-Mb-m0s" secondAttribute="top" id="lGc-ML-2dl"/>
+                            <constraint firstItem="gAs-YY-Wsg" firstAttribute="width" secondItem="DhC-RP-BGP" secondAttribute="width" id="p7Q-FI-Wd4"/>
+                            <constraint firstAttribute="bottom" secondItem="DhC-RP-BGP" secondAttribute="bottom" id="tTO-lB-6eh"/>
+                            <constraint firstAttribute="bottom" secondItem="fyJ-G1-Cys" secondAttribute="bottom" id="un1-yy-noW"/>
+                            <constraint firstItem="gAs-YY-Wsg" firstAttribute="leading" secondItem="crw-Mj-j1E" secondAttribute="trailing" id="vSd-kz-NHA"/>
+                            <constraint firstAttribute="trailing" secondItem="sTM-m8-nkq" secondAttribute="trailing" id="wf1-6v-9QT"/>
+                            <constraint firstItem="sTM-m8-nkq" firstAttribute="top" secondItem="WUM-Mb-m0s" secondAttribute="top" id="xAI-eb-LfM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="engineerButton" destination="dKI-hX-oWx" id="qez-ug-R9n"/>
+                        <outlet property="engineerOilButton" destination="aEt-ph-A6u" id="tXR-Zj-uhp"/>
+                        <outlet property="fuelOilButton" destination="JVL-j9-oO9" id="lgF-RH-hds"/>
+                        <outlet property="handbreakButton" destination="LWm-SC-2G5" id="b9Z-Ya-uRy"/>
+                        <outlet property="lightForDashBoardButton" destination="t54-8p-qIr" id="Qjy-AC-lYh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbC-Tu-eXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1903" y="110"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back_left_closed" width="213" height="266"/>
@@ -206,9 +347,20 @@
         <image name="back_right_open" width="213" height="266"/>
         <image name="body_bottom" width="213" height="266"/>
         <image name="body_top" width="213" height="266"/>
+        <image name="charging_off" width="64" height="64"/>
+        <image name="charging_on" width="64" height="64"/>
+        <image name="dashboard_bg" width="160" height="266"/>
+        <image name="engine_oil_off" width="64" height="64"/>
+        <image name="engine_oil_on" width="64" height="64"/>
+        <image name="engine_trouble_off" width="64" height="64"/>
+        <image name="engine_trouble_on" width="64" height="64"/>
         <image name="front_left_closed" width="213" height="266"/>
         <image name="front_left_open" width="213" height="266"/>
         <image name="front_right_closed" width="213" height="266"/>
         <image name="front_right_open" width="213" height="266"/>
+        <image name="fuel_off" width="64" height="64"/>
+        <image name="fuel_on" width="64" height="64"/>
+        <image name="handbrake_off" width="64" height="64"/>
+        <image name="handbrake_on" width="64" height="64"/>
     </resources>
 </document>
