@@ -29,8 +29,9 @@ class LoginViewController: UIViewController {
 
     func showMainWithToken(token: String) {
 
-        
-
+        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        app.clientID = token
+        app.showMainScreen()
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,6 +52,8 @@ class LoginViewController: UIViewController {
                 let setting = NSUserDefaults.standardUserDefaults()
                 setting.setObject(theToken, forKey: LoginViewController.keyForToken)
                 setting.synchronize()
+
+                self.showMainWithToken(theToken)
             }
 
         })

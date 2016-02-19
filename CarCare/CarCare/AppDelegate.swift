@@ -14,6 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var clientID: String?
+
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -105,6 +107,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 abort()
             }
         }
+    }
+
+
+    func showMainScreen() {
+        let mainStroyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let controller: CarStatusViewController = mainStroyBoard.instantiateInitialViewController() as! CarStatusViewController
+
+        controller.token = clientID
+
+        if window == nil {
+            window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        }
+
+        window!.rootViewController = controller
+        window!.makeKeyAndVisible()
     }
 
 }
