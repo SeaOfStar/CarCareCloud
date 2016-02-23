@@ -52,6 +52,9 @@ class CarStatusViewController: UIViewController {
             self.token = token
         }
         // Do any additional setup after loading the view.
+
+        speedMeter.unitText = "KM/H"
+        angelMeter.unitText = "rpm"
     }
 
     override func didReceiveMemoryWarning() {
@@ -93,13 +96,27 @@ class CarStatusViewController: UIViewController {
 
     // MARK: 驾驶信息
     func reloadDriveData(driveInfo : [String : AnyObject]) {
-//        NSLog("\(driveInfo)")
-
-//            parkingBrake = PARKING;
-
         if let parkingBrake = driveInfo["parkingBrake"] {
             dashboard.手刹 = (parkingBrake as! String == "PARKING")
         }
+
+        if let speed = driveInfo["speed"] {
+            let speedValue = speed as! Double
+            speedMeter.rate = speedValue / 260.0
+            speedMeter.text = "\(speedValue)"
+        }
+
+        // 这个地方具体的业务逻辑不太清楚，等问问翟
+        if let unitsInfo = driveInfo["units"] {
+            let units = unitsInfo as! [[String : AnyObject]]
+            if let rpm = units.first?["rpm"] {
+                let rate = rpm as! Double / 8864.0
+                angelMeter.rate = rate
+                angelMeter.text = "\(rpm)"
+            }
+        }
+
+        print("\(driveInfo)")
     }
 
     // MARK:车门
@@ -152,6 +169,10 @@ class CarStatusViewController: UIViewController {
         }
     }
 
+    // MARK: 速度表&转速表
+    var speedMeter: SpeedoMeterViewController!
+    var angelMeter: SpeedoMeterViewController!
+
 
     // MARK: - Navigation
 
@@ -165,6 +186,12 @@ class CarStatusViewController: UIViewController {
 
             case "仪表盘":
                 self.dashboard = segue.destinationViewController as! DashboardViewController
+
+            case "时速表":
+                self.speedMeter = segue.destinationViewController as! SpeedoMeterViewController
+
+            case "转速表":
+                self.angelMeter = segue.destinationViewController as! SpeedoMeterViewController
 
             default:
                 break

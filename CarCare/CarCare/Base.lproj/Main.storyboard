@@ -42,7 +42,7 @@
                                                 <rect key="frame" x="8" y="8" width="264" height="132"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <connections>
-                                                    <segue destination="fZh-7s-BFJ" kind="embed" id="VoT-BO-dLf"/>
+                                                    <segue destination="fZh-7s-BFJ" kind="embed" identifier="时速表" id="VoT-BO-dLf"/>
                                                 </connections>
                                             </containerView>
                                         </subviews>
@@ -56,7 +56,22 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vwb-o7-JtU">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="148"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-bB-QvK">
+                                                <rect key="frame" x="8" y="8" width="264" height="132"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <segue destination="fZh-7s-BFJ" kind="embed" identifier="转速表" id="9oO-dy-IYf"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Bga-bB-QvK" secondAttribute="bottom" constant="8" id="CUr-hZ-A2d"/>
+                                            <constraint firstItem="Bga-bB-QvK" firstAttribute="top" secondItem="Vwb-o7-JtU" secondAttribute="top" constant="8" id="JMP-uD-YFL"/>
+                                            <constraint firstItem="Bga-bB-QvK" firstAttribute="leading" secondItem="Vwb-o7-JtU" secondAttribute="leading" constant="8" id="f9w-GR-Zha"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bga-bB-QvK" secondAttribute="trailing" constant="8" id="sa0-Ww-raI"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -407,15 +422,31 @@
                                 <rect key="frame" x="0.0" y="0.0" width="264" height="132"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpx-TK-hZl">
+                                <rect key="frame" x="103.5" y="54.5" width="33" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km/h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niW-QZ-tbC">
+                                <rect key="frame" x="138" y="58" width="30.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="f2Y-I2-vKg" firstAttribute="trailing" secondItem="zew-0G-pXz" secondAttribute="trailing" id="6fL-HD-0E5"/>
+                            <constraint firstItem="niW-QZ-tbC" firstAttribute="centerY" secondItem="YSC-Ae-WrV" secondAttribute="centerY" id="9kL-Hu-gRP"/>
+                            <constraint firstItem="niW-QZ-tbC" firstAttribute="leading" secondItem="Wpx-TK-hZl" secondAttribute="trailing" constant="2" id="J50-Wx-DpE"/>
                             <constraint firstItem="f2Y-I2-vKg" firstAttribute="bottom" secondItem="zew-0G-pXz" secondAttribute="bottom" id="JEM-iN-l0r"/>
                             <constraint firstItem="f2Y-I2-vKg" firstAttribute="top" secondItem="zew-0G-pXz" secondAttribute="top" id="OV9-iL-4b4"/>
                             <constraint firstItem="f2Y-I2-vKg" firstAttribute="leading" secondItem="zew-0G-pXz" secondAttribute="leading" id="RcZ-01-PvV"/>
                             <constraint firstItem="zew-0G-pXz" firstAttribute="top" secondItem="YSC-Ae-WrV" secondAttribute="top" id="Udv-99-Zrz"/>
                             <constraint firstAttribute="trailing" secondItem="zew-0G-pXz" secondAttribute="trailing" id="WcM-wu-UPS"/>
+                            <constraint firstItem="Wpx-TK-hZl" firstAttribute="centerY" secondItem="YSC-Ae-WrV" secondAttribute="centerY" id="hC0-39-obD"/>
+                            <constraint firstItem="Wpx-TK-hZl" firstAttribute="centerX" secondItem="YSC-Ae-WrV" secondAttribute="centerX" constant="-12" id="jXA-pJ-tE0"/>
                             <constraint firstItem="zew-0G-pXz" firstAttribute="leading" secondItem="YSC-Ae-WrV" secondAttribute="leading" id="kwt-Xk-9XE"/>
                             <constraint firstAttribute="bottom" secondItem="zew-0G-pXz" secondAttribute="bottom" id="m72-Y7-6FL"/>
                         </constraints>
@@ -423,6 +454,8 @@
                     <connections>
                         <outlet property="colorImage" destination="zew-0G-pXz" id="ji3-7p-MIB"/>
                         <outlet property="maskImage" destination="f2Y-I2-vKg" id="395-xE-S3v"/>
+                        <outlet property="unitLabel" destination="niW-QZ-tbC" id="VuA-NR-v6a"/>
+                        <outlet property="valueLabel" destination="Wpx-TK-hZl" id="J3p-QZ-wbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osA-0Z-Xh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -455,4 +488,7 @@
         <image name="kmph" width="80" height="80"/>
         <image name="mask" width="80" height="80"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VoT-BO-dLf"/>
+    </inferredMetricsTieBreakers>
 </document>
