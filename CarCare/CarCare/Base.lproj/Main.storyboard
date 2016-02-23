@@ -387,10 +387,10 @@
             </objects>
             <point key="canvasLocation" x="1903" y="110"/>
         </scene>
-        <!--View Controller-->
+        <!--Speedo Meter View Controller-->
         <scene sceneID="xSF-Fq-rg2">
             <objects>
-                <viewController id="fZh-7s-BFJ" sceneMemberID="viewController">
+                <viewController id="fZh-7s-BFJ" customClass="SpeedoMeterViewController" customModule="CarCare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ymW-15-9q2"/>
                         <viewControllerLayoutGuide type="bottom" id="AUB-QD-1wF"/>
@@ -420,6 +420,10 @@
                             <constraint firstAttribute="bottom" secondItem="zew-0G-pXz" secondAttribute="bottom" id="m72-Y7-6FL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorImage" destination="zew-0G-pXz" id="ji3-7p-MIB"/>
+                        <outlet property="maskImage" destination="f2Y-I2-vKg" id="395-xE-S3v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osA-0Z-Xh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
