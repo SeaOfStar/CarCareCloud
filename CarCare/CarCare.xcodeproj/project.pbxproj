@@ -51,6 +51,8 @@
 		F8F7CE0C1C902FED0087C392 /* StatusPanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE091C902FED0087C392 /* StatusPanel.storyboard */; };
 		F8F7CE0F1C90305C0087C392 /* SpeedMeter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE0D1C90305C0087C392 /* SpeedMeter.storyboard */; };
 		F8F7CE101C90305C0087C392 /* SpeedMeter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE0D1C90305C0087C392 /* SpeedMeter.storyboard */; };
+		F8F7CE141C9031930087C392 /* Android.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE131C9031930087C392 /* Android.storyboard */; };
+		F8F7CE151C9031930087C392 /* Android.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE131C9031930087C392 /* Android.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,7 @@
 		F8DF7C191C7BEECE002C66B1 /* SpeedoMeterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedoMeterViewController.swift; sourceTree = "<group>"; };
 		F8F7CE0A1C902FED0087C392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StatusPanel.storyboard; sourceTree = "<group>"; };
 		F8F7CE0E1C90305C0087C392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SpeedMeter.storyboard; sourceTree = "<group>"; };
+		F8F7CE131C9031930087C392 /* Android.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Android.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +215,7 @@
 		F8B5CA681C75BC0200D74569 /* CarCare */ = {
 			isa = PBXGroup;
 			children = (
+				F8F7CE121C90315F0087C392 /* 模仿安卓的界面 */,
 				F8013AAD1C76B07B00B1F2FC /* CarCare-Bridging-Header.h */,
 				F8013AAB1C76B05600B1F2FC /* lib */,
 				F8013AA61C76AEF800B1F2FC /* 主页面 */,
@@ -244,6 +248,14 @@
 				F8B5CA8E1C75BC0300D74569 /* Info.plist */,
 			);
 			path = CarCareUITests;
+			sourceTree = "<group>";
+		};
+		F8F7CE121C90315F0087C392 /* 模仿安卓的界面 */ = {
+			isa = PBXGroup;
+			children = (
+				F8F7CE131C9031930087C392 /* Android.storyboard */,
+			);
+			name = "模仿安卓的界面";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +367,7 @@
 				F8F7CE0B1C902FED0087C392 /* StatusPanel.storyboard in Resources */,
 				F8B5CA771C75BC0200D74569 /* LaunchScreen.storyboard in Resources */,
 				F8B5CA741C75BC0200D74569 /* Assets.xcassets in Resources */,
+				F8F7CE141C9031930087C392 /* Android.storyboard in Resources */,
 				F8F7CE0F1C90305C0087C392 /* SpeedMeter.storyboard in Resources */,
 				F8B5CA6F1C75BC0200D74569 /* Main.storyboard in Resources */,
 			);
@@ -373,6 +386,7 @@
 			files = (
 				F8B5CA9D1C75BC8F00D74569 /* Login.storyboard in Resources */,
 				F8F7CE101C90305C0087C392 /* SpeedMeter.storyboard in Resources */,
+				F8F7CE151C9031930087C392 /* Android.storyboard in Resources */,
 				F8F7CE0C1C902FED0087C392 /* StatusPanel.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
