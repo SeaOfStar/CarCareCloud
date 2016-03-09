@@ -111,7 +111,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func showMainScreen() {
-        let mainStroyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let mainStroyBoard = UIStoryboard(name: "Android", bundle: nil)
         let controller = mainStroyBoard.instantiateInitialViewController()
 //        controller.token = clientID
 

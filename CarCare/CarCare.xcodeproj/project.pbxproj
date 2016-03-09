@@ -53,6 +53,10 @@
 		F8F7CE101C90305C0087C392 /* SpeedMeter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE0D1C90305C0087C392 /* SpeedMeter.storyboard */; };
 		F8F7CE141C9031930087C392 /* Android.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE131C9031930087C392 /* Android.storyboard */; };
 		F8F7CE151C9031930087C392 /* Android.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE131C9031930087C392 /* Android.storyboard */; };
+		F8F7CE171C903E390087C392 /* CarStatusFrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7CE161C903E390087C392 /* CarStatusFrameworkViewController.swift */; };
+		F8F7CE181C903E390087C392 /* CarStatusFrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7CE161C903E390087C392 /* CarStatusFrameworkViewController.swift */; };
+		F8F7CE1D1C903FDB0087C392 /* CarParamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7CE1C1C903FDB0087C392 /* CarParamTableViewController.swift */; };
+		F8F7CE1E1C903FDB0087C392 /* CarParamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7CE1C1C903FDB0087C392 /* CarParamTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +113,8 @@
 		F8F7CE0A1C902FED0087C392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StatusPanel.storyboard; sourceTree = "<group>"; };
 		F8F7CE0E1C90305C0087C392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SpeedMeter.storyboard; sourceTree = "<group>"; };
 		F8F7CE131C9031930087C392 /* Android.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Android.storyboard; sourceTree = "<group>"; };
+		F8F7CE161C903E390087C392 /* CarStatusFrameworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarStatusFrameworkViewController.swift; sourceTree = "<group>"; };
+		F8F7CE1C1C903FDB0087C392 /* CarParamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarParamTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,13 +222,13 @@
 			isa = PBXGroup;
 			children = (
 				F8F7CE121C90315F0087C392 /* 模仿安卓的界面 */,
-				F8013AAD1C76B07B00B1F2FC /* CarCare-Bridging-Header.h */,
 				F8013AAB1C76B05600B1F2FC /* lib */,
 				F8013AA61C76AEF800B1F2FC /* 主页面 */,
 				F8013A9E1C75C0BC00B1F2FC /* 登录 */,
 				F8B5CA691C75BC0200D74569 /* AppDelegate.swift */,
 				F8B5CA6B1C75BC0200D74569 /* ViewController.swift */,
 				F8B5CA731C75BC0200D74569 /* Assets.xcassets */,
+				F8013AAD1C76B07B00B1F2FC /* CarCare-Bridging-Header.h */,
 				F8B5CA751C75BC0200D74569 /* LaunchScreen.storyboard */,
 				F8B5CA781C75BC0200D74569 /* Info.plist */,
 				F8B5CA701C75BC0200D74569 /* CarCare.xcdatamodeld */,
@@ -254,6 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				F8F7CE131C9031930087C392 /* Android.storyboard */,
+				F8F7CE161C903E390087C392 /* CarStatusFrameworkViewController.swift */,
+				F8F7CE1C1C903FDB0087C392 /* CarParamTableViewController.swift */,
 			);
 			name = "模仿安卓的界面";
 			sourceTree = "<group>";
@@ -406,6 +414,8 @@
 				F8B5CA721C75BC0200D74569 /* CarCare.xcdatamodeld in Sources */,
 				F8013AA81C76AF2200B1F2FC /* CarStatusViewController.swift in Sources */,
 				F8013AA31C769FE100B1F2FC /* LoginHttpTask.swift in Sources */,
+				F8F7CE171C903E390087C392 /* CarStatusFrameworkViewController.swift in Sources */,
+				F8F7CE1D1C903FDB0087C392 /* CarParamTableViewController.swift in Sources */,
 				F88385C91C76F20700DA1875 /* DashboardViewController.swift in Sources */,
 				F8DF7C1A1C7BEECE002C66B1 /* SpeedoMeterViewController.swift in Sources */,
 				F8013ABE1C76B13100B1F2FC /* CocoaMQTT.swift in Sources */,
@@ -436,6 +446,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F7CE181C903E390087C392 /* CarStatusFrameworkViewController.swift in Sources */,
+				F8F7CE1E1C903FDB0087C392 /* CarParamTableViewController.swift in Sources */,
 				F8013AB61C76B07C00B1F2FC /* GCDAsyncSocket.m in Sources */,
 				F8013AC61C76B13100B1F2FC /* CocoaMQTTMessage.swift in Sources */,
 				F8DF7C1B1C7BEECE002C66B1 /* SpeedoMeterViewController.swift in Sources */,
