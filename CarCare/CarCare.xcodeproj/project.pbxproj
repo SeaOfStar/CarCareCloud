@@ -47,6 +47,8 @@
 		F8B5CA9D1C75BC8F00D74569 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CA9A1C75BC8F00D74569 /* Login.storyboard */; };
 		F8DF7C1A1C7BEECE002C66B1 /* SpeedoMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF7C191C7BEECE002C66B1 /* SpeedoMeterViewController.swift */; };
 		F8DF7C1B1C7BEECE002C66B1 /* SpeedoMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF7C191C7BEECE002C66B1 /* SpeedoMeterViewController.swift */; };
+		F8F7CE0B1C902FED0087C392 /* StatusPanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE091C902FED0087C392 /* StatusPanel.storyboard */; };
+		F8F7CE0C1C902FED0087C392 /* StatusPanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE091C902FED0087C392 /* StatusPanel.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,7 @@
 		F8B5CA8E1C75BC0300D74569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8B5CA9B1C75BC8F00D74569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		F8DF7C191C7BEECE002C66B1 /* SpeedoMeterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedoMeterViewController.swift; sourceTree = "<group>"; };
+		F8F7CE0A1C902FED0087C392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StatusPanel.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,7 @@
 				F8220CDC1C77147000269012 /* 控件 */,
 				F88385C51C76DDE700DA1875 /* DoorViewController.swift */,
 				F8B5CA6D1C75BC0200D74569 /* Main.storyboard */,
+				F8F7CE091C902FED0087C392 /* StatusPanel.storyboard */,
 				F8013AA71C76AF2200B1F2FC /* CarStatusViewController.swift */,
 				F88385C81C76F20700DA1875 /* DashboardViewController.swift */,
 			);
@@ -344,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8B5CA9C1C75BC8F00D74569 /* Login.storyboard in Resources */,
+				F8F7CE0B1C902FED0087C392 /* StatusPanel.storyboard in Resources */,
 				F8B5CA771C75BC0200D74569 /* LaunchScreen.storyboard in Resources */,
 				F8B5CA741C75BC0200D74569 /* Assets.xcassets in Resources */,
 				F8B5CA6F1C75BC0200D74569 /* Main.storyboard in Resources */,
@@ -362,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8B5CA9D1C75BC8F00D74569 /* Login.storyboard in Resources */,
+				F8F7CE0C1C902FED0087C392 /* StatusPanel.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +468,14 @@
 				F8B5CA9B1C75BC8F00D74569 /* Base */,
 			);
 			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		F8F7CE091C902FED0087C392 /* StatusPanel.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8F7CE0A1C902FED0087C392 /* Base */,
+			);
+			name = StatusPanel.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

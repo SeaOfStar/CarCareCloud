@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZrE-fU-3na">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard View Controller-->
+        <scene sceneID="2ry-19-ieq">
+            <objects>
+                <viewController id="ZrE-fU-3na" customClass="DashboardViewController" customModule="CarCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vY0-9f-6Yn"/>
+                        <viewControllerLayoutGuide type="bottom" id="bmL-dZ-uMJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WUM-Mb-m0s">
+                        <rect key="frame" x="0.0" y="0.0" width="560" height="64"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAs-YY-Wsg">
+                                <rect key="frame" x="336" y="0.0" width="112" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKI-hX-oWx">
+                                        <rect key="frame" x="24" y="0.0" width="64" height="64"/>
+                                        <state key="normal" image="engine_trouble_off"/>
+                                        <state key="highlighted" image="engine_trouble_on"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dKI-hX-oWx" firstAttribute="centerY" secondItem="gAs-YY-Wsg" secondAttribute="centerY" id="TKm-NI-ZPO"/>
+                                    <constraint firstItem="dKI-hX-oWx" firstAttribute="centerX" secondItem="gAs-YY-Wsg" secondAttribute="centerX" id="uWf-NI-YGc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DhC-RP-BGP">
+                                <rect key="frame" x="0.0" y="0.0" width="112" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWm-SC-2G5">
+                                        <rect key="frame" x="24" y="0.0" width="64" height="64"/>
+                                        <state key="normal" image="handbrake_off" backgroundImage="handbrake_off"/>
+                                        <state key="highlighted" image="handbrake_on" backgroundImage="handbrake_on"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="LWm-SC-2G5" firstAttribute="centerX" secondItem="DhC-RP-BGP" secondAttribute="centerX" id="5R6-RH-DoK"/>
+                                    <constraint firstItem="LWm-SC-2G5" firstAttribute="centerY" secondItem="DhC-RP-BGP" secondAttribute="centerY" id="q0Z-uB-zNP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyJ-G1-Cys">
+                                <rect key="frame" x="112" y="0.0" width="112" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEt-ph-A6u">
+                                        <rect key="frame" x="24" y="0.0" width="64" height="64"/>
+                                        <state key="normal" image="engine_oil_off"/>
+                                        <state key="highlighted" image="engine_oil_on"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="aEt-ph-A6u" firstAttribute="centerX" secondItem="fyJ-G1-Cys" secondAttribute="centerX" id="Bdm-XA-vxZ"/>
+                                    <constraint firstItem="aEt-ph-A6u" firstAttribute="centerY" secondItem="fyJ-G1-Cys" secondAttribute="centerY" id="lgC-Mb-j0D"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crw-Mj-j1E">
+                                <rect key="frame" x="224" y="0.0" width="112" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t54-8p-qIr">
+                                        <rect key="frame" x="24" y="0.0" width="64" height="64"/>
+                                        <state key="normal" image="charging_off"/>
+                                        <state key="highlighted" image="charging_on"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="t54-8p-qIr" firstAttribute="centerX" secondItem="crw-Mj-j1E" secondAttribute="centerX" id="CcN-ty-Afu"/>
+                                    <constraint firstItem="t54-8p-qIr" firstAttribute="centerY" secondItem="crw-Mj-j1E" secondAttribute="centerY" id="Iap-Bl-ctv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTM-m8-nkq">
+                                <rect key="frame" x="448" y="0.0" width="112" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVL-j9-oO9">
+                                        <rect key="frame" x="24" y="0.0" width="64" height="64"/>
+                                        <state key="normal" image="fuel_off"/>
+                                        <state key="highlighted" image="fuel_on"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="JVL-j9-oO9" firstAttribute="centerX" secondItem="sTM-m8-nkq" secondAttribute="centerX" id="opm-sf-Kjn"/>
+                                    <constraint firstItem="JVL-j9-oO9" firstAttribute="centerY" secondItem="sTM-m8-nkq" secondAttribute="centerY" id="rsy-zX-4rE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fyJ-G1-Cys" firstAttribute="leading" secondItem="DhC-RP-BGP" secondAttribute="trailing" id="0oJ-B0-zjm"/>
+                            <constraint firstItem="crw-Mj-j1E" firstAttribute="top" secondItem="WUM-Mb-m0s" secondAttribute="top" id="2UP-W1-f75"/>
+                            <constraint firstItem="DhC-RP-BGP" firstAttribute="leading" secondItem="WUM-Mb-m0s" secondAttribute="leading" id="3cj-Yd-zfl"/>
+                            <constraint firstItem="DhC-RP-BGP" firstAttribute="top" secondItem="WUM-Mb-m0s" secondAttribute="top" id="8fV-Nk-wmp"/>
+                            <constraint firstItem="crw-Mj-j1E" firstAttribute="leading" secondItem="fyJ-G1-Cys" secondAttribute="trailing" id="9Uk-eY-nAc"/>
+                            <constraint firstItem="sTM-m8-nkq" firstAttribute="leading" secondItem="gAs-YY-Wsg" secondAttribute="trailing" id="BE7-jR-Dfr"/>
+                            <constraint firstItem="gAs-YY-Wsg" firstAttribute="top" secondItem="WUM-Mb-m0s" secondAttribute="top" id="BzB-jc-l1g"/>
+                            <constraint firstItem="fyJ-G1-Cys" firstAttribute="width" secondItem="DhC-RP-BGP" secondAttribute="width" id="Fvg-dn-FF4"/>
+                            <constraint firstAttribute="bottom" secondItem="sTM-m8-nkq" secondAttribute="bottom" id="GF4-aj-IxT"/>
+                            <constraint firstItem="sTM-m8-nkq" firstAttribute="width" secondItem="DhC-RP-BGP" secondAttribute="width" id="Qeg-4K-AVB"/>
+                            <constraint firstItem="crw-Mj-j1E" firstAttribute="width" secondItem="DhC-RP-BGP" secondAttribute="width" id="QkL-Su-Fjs"/>
+                            <constraint firstAttribute="bottom" secondItem="crw-Mj-j1E" secondAttribute="bottom" id="SBu-pb-ZkL"/>
+                            <constraint firstAttribute="bottom" secondItem="gAs-YY-Wsg" secondAttribute="bottom" id="eZQ-Ek-Uuz"/>
+                            <constraint firstItem="fyJ-G1-Cys" firstAttribute="top" secondItem="WUM-Mb-m0s" secondAttribute="top" id="lGc-ML-2dl"/>
+                            <constraint firstItem="gAs-YY-Wsg" firstAttribute="width" secondItem="DhC-RP-BGP" secondAttribute="width" id="p7Q-FI-Wd4"/>
+                            <constraint firstAttribute="bottom" secondItem="DhC-RP-BGP" secondAttribute="bottom" id="tTO-lB-6eh"/>
+                            <constraint firstAttribute="bottom" secondItem="fyJ-G1-Cys" secondAttribute="bottom" id="un1-yy-noW"/>
+                            <constraint firstItem="gAs-YY-Wsg" firstAttribute="leading" secondItem="crw-Mj-j1E" secondAttribute="trailing" id="vSd-kz-NHA"/>
+                            <constraint firstAttribute="trailing" secondItem="sTM-m8-nkq" secondAttribute="trailing" id="wf1-6v-9QT"/>
+                            <constraint firstItem="sTM-m8-nkq" firstAttribute="top" secondItem="WUM-Mb-m0s" secondAttribute="top" id="xAI-eb-LfM"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <fixedSimulatedSizeMetrics key="simulatedDestinationMetrics">
+                        <size key="portraitSize" width="560" height="64"/>
+                        <size key="landscapeSize" width="64" height="560"/>
+                    </fixedSimulatedSizeMetrics>
+                    <connections>
+                        <outlet property="engineerButton" destination="dKI-hX-oWx" id="qez-ug-R9n"/>
+                        <outlet property="engineerOilButton" destination="aEt-ph-A6u" id="tXR-Zj-uhp"/>
+                        <outlet property="fuelOilButton" destination="JVL-j9-oO9" id="lgF-RH-hds"/>
+                        <outlet property="handbreakButton" destination="LWm-SC-2G5" id="b9Z-Ya-uRy"/>
+                        <outlet property="lightForDashBoardButton" destination="t54-8p-qIr" id="Qjy-AC-lYh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbC-Tu-eXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1883" y="108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="charging_off" width="64" height="64"/>
+        <image name="charging_on" width="64" height="64"/>
+        <image name="engine_oil_off" width="64" height="64"/>
+        <image name="engine_oil_on" width="64" height="64"/>
+        <image name="engine_trouble_off" width="64" height="64"/>
+        <image name="engine_trouble_on" width="64" height="64"/>
+        <image name="fuel_off" width="64" height="64"/>
+        <image name="fuel_on" width="64" height="64"/>
+        <image name="handbrake_off" width="64" height="64"/>
+        <image name="handbrake_on" width="64" height="64"/>
+    </resources>
+</document>
