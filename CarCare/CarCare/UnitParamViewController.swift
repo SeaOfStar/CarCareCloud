@@ -165,6 +165,12 @@ extension UnitParamViewController: UITableViewDataSource, UITableViewDelegate {
 
         let cell = tableView.dequeueReusableCellWithIdentifier(CellID, forIndexPath: indexPath);
 
+        let layer = cell.contentView.viewWithTag(500)!.layer
+//        layer.borderColor = UIColor.clearColor().CGColor
+//        layer.borderWidth = 8.0
+        layer.cornerRadius = 4.0
+        layer.masksToBounds = true
+
         let titleLabel = cell.contentView.viewWithTag(501) as! UILabel
         titleLabel.text = paramDefine.title
 
