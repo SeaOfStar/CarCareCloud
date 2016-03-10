@@ -31,6 +31,12 @@
 		F8013AC61C76B13100B1F2FC /* CocoaMQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABD1C76B13100B1F2FC /* CocoaMQTTMessage.swift */; };
 		F8220CDE1C7714ED00269012 /* CASplitedCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8220CDD1C7714ED00269012 /* CASplitedCircleLayer.swift */; };
 		F8220CDF1C7714ED00269012 /* CASplitedCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8220CDD1C7714ED00269012 /* CASplitedCircleLayer.swift */; };
+		F8233B751C914F4C0084A665 /* UnitParamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8233B741C914F4C0084A665 /* UnitParamViewController.swift */; };
+		F8233B761C914F4C0084A665 /* UnitParamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8233B741C914F4C0084A665 /* UnitParamViewController.swift */; };
+		F8233B781C91513C0084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B771C91513C0084A665 /* BiMoFramework.framework */; };
+		F8233B791C91513C0084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B771C91513C0084A665 /* BiMoFramework.framework */; };
+		F8233B7A1C91514C0084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B771C91513C0084A665 /* BiMoFramework.framework */; };
+		F8233B7B1C91514C0084A665 /* BiMoFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B771C91513C0084A665 /* BiMoFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F88385C61C76DDE700DA1875 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C51C76DDE700DA1875 /* DoorViewController.swift */; };
 		F88385C71C76DDE700DA1875 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C51C76DDE700DA1875 /* DoorViewController.swift */; };
 		F88385C91C76F20700DA1875 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C81C76F20700DA1875 /* DashboardViewController.swift */; };
@@ -76,6 +82,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F8233B7C1C91514C0084A665 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F8233B7B1C91514C0084A665 /* BiMoFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F8013A9F1C75C0E900B1F2FC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F8013AA21C769FE100B1F2FC /* LoginHttpTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHttpTask.swift; sourceTree = "<group>"; };
@@ -92,6 +112,8 @@
 		F8013ABC1C76B13100B1F2FC /* CocoaMQTTFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaMQTTFrame.swift; sourceTree = "<group>"; };
 		F8013ABD1C76B13100B1F2FC /* CocoaMQTTMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaMQTTMessage.swift; sourceTree = "<group>"; };
 		F8220CDD1C7714ED00269012 /* CASplitedCircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CASplitedCircleLayer.swift; sourceTree = "<group>"; };
+		F8233B741C914F4C0084A665 /* UnitParamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitParamViewController.swift; sourceTree = "<group>"; };
+		F8233B771C91513C0084A665 /* BiMoFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiMoFramework.framework; sourceTree = "<group>"; };
 		F88385C51C76DDE700DA1875 /* DoorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoorViewController.swift; sourceTree = "<group>"; };
 		F88385C81C76F20700DA1875 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		F8B5CA661C75BC0200D74569 /* CarCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +144,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8233B7A1C91514C0084A665 /* BiMoFramework.framework in Frameworks */,
+				F8233B781C91513C0084A665 /* BiMoFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8233B791C91513C0084A665 /* BiMoFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +194,7 @@
 		F8013AAB1C76B05600B1F2FC /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				F8233B771C91513C0084A665 /* BiMoFramework.framework */,
 				F8013AAC1C76B05600B1F2FC /* MQTT */,
 			);
 			path = lib;
@@ -262,6 +288,7 @@
 				F8F7CE131C9031930087C392 /* Android.storyboard */,
 				F8F7CE161C903E390087C392 /* CarStatusFrameworkViewController.swift */,
 				F8F7CE1C1C903FDB0087C392 /* CarParamTableViewController.swift */,
+				F8233B741C914F4C0084A665 /* UnitParamViewController.swift */,
 			);
 			name = "模仿安卓的界面";
 			sourceTree = "<group>";
@@ -276,6 +303,7 @@
 				F8B5CA621C75BC0200D74569 /* Sources */,
 				F8B5CA631C75BC0200D74569 /* Frameworks */,
 				F8B5CA641C75BC0200D74569 /* Resources */,
+				F8233B7C1C91514C0084A665 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -414,6 +442,7 @@
 				F8B5CA721C75BC0200D74569 /* CarCare.xcdatamodeld in Sources */,
 				F8013AA81C76AF2200B1F2FC /* CarStatusViewController.swift in Sources */,
 				F8013AA31C769FE100B1F2FC /* LoginHttpTask.swift in Sources */,
+				F8233B751C914F4C0084A665 /* UnitParamViewController.swift in Sources */,
 				F8F7CE171C903E390087C392 /* CarStatusFrameworkViewController.swift in Sources */,
 				F8F7CE1D1C903FDB0087C392 /* CarParamTableViewController.swift in Sources */,
 				F88385C91C76F20700DA1875 /* DashboardViewController.swift in Sources */,
@@ -448,6 +477,7 @@
 			files = (
 				F8F7CE181C903E390087C392 /* CarStatusFrameworkViewController.swift in Sources */,
 				F8F7CE1E1C903FDB0087C392 /* CarParamTableViewController.swift in Sources */,
+				F8233B761C914F4C0084A665 /* UnitParamViewController.swift in Sources */,
 				F8013AB61C76B07C00B1F2FC /* GCDAsyncSocket.m in Sources */,
 				F8013AC61C76B13100B1F2FC /* CocoaMQTTMessage.swift in Sources */,
 				F8DF7C1B1C7BEECE002C66B1 /* SpeedoMeterViewController.swift in Sources */,
@@ -609,6 +639,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarCare/lib",
+				);
 				INFOPLIST_FILE = CarCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dhc.mibd.CarCare;
@@ -627,6 +661,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarCare/lib",
+				);
 				INFOPLIST_FILE = CarCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dhc.mibd.CarCare;
@@ -670,6 +708,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarCare/lib",
+				);
 				INFOPLIST_FILE = CarCareUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dhc.mibd.CarCareUITests;
@@ -685,6 +727,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarCare/lib",
+				);
 				INFOPLIST_FILE = CarCareUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dhc.mibd.CarCareUITests;

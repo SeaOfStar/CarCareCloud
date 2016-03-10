@@ -15,6 +15,9 @@ class CarParamTableViewController: UITableViewController {
     private var angelMeter: SpeedoMeterViewController!
     private var statusPanel: DashboardViewController!
 
+    // 电机或者电池的子画面
+    private weak var paramSubControl: UnitParamViewController?
+
 
     // cell
     @IBOutlet weak var statusPanelCell: UITableViewCell!
@@ -105,6 +108,23 @@ class CarParamTableViewController: UITableViewController {
 
         // 更新电池相关
         self.reloadBattery()
+
+        // 更新子页面
+        self.reloadSubController()
+    }
+
+    private func reloadSubController() {
+
+        if let sub = self.paramSubControl {
+            // 根据子页面的属性判断赋何值
+            if sub.isBattery {
+                sub.dataSource = self.batteryData
+            }
+            else {
+                sub.dataSource = self.driveData
+            }
+            sub.reloadData()
+        }
     }
 
     // MARK: 电池情况
@@ -116,7 +136,7 @@ class CarParamTableViewController: UITableViewController {
     @IBOutlet weak var 电池数量label: UILabel!
 
     private func reloadBattery() {
-        NSLog("battery Data = \r\(self.batteryData)")
+//        NSLog("battery Data = \r\(self.batteryData)")
 
         if let volt = self.batteryData?["volt"] as? Double {
             let voltValue = volt * 0.1
@@ -258,16 +278,6 @@ class CarParamTableViewController: UITableViewController {
     }
 
     /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
@@ -316,6 +326,18 @@ class CarParamTableViewController: UITableViewController {
 
         case "状态面板":
             self.statusPanel = segue.destinationViewController as! DashboardViewController
+
+        case "电池组详细":
+            let subParamController = segue.destinationViewController as! UnitParamViewController
+            subParamController.isBattery = true
+            subParamController.dataSource = self.batteryData
+            self.paramSubControl = subParamController
+
+        case "电机详细":
+            let subParamController = segue.destinationViewController as! UnitParamViewController
+            subParamController.isBattery = false
+            subParamController.dataSource = self.driveData
+            self.paramSubControl = subParamController
 
         default:
             break

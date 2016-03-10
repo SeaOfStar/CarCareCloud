@@ -1,0 +1,6 @@
+framework module BiMoFramework {
+  umbrella header "BiMoFramework.h"
+
+  export *
+  module * { export * }
+}

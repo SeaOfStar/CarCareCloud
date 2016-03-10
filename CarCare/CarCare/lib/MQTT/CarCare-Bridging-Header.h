@@ -3,3 +3,4 @@
 //
 
 #import "CocoaMQTT.h"
+#import <BiMoFramework/BiMoFramework.h>
