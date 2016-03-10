@@ -20,6 +20,13 @@ func convertIntValue(value: AnyObject, withRate rate:Double) ->String? {
     return String(format: "%.2f", Double(intValue) * rate)
 }
 
+func converSubDouble(value: AnyObject, subKey: String, rate: Double) -> String? {
+    if let subValue = (value as! [String: Double])[subKey] {
+        return String(format: "%.2f", subValue * rate)
+    }
+    return nil
+}
+
 
 class UnitParamViewController: UIViewController {
 
@@ -94,8 +101,24 @@ class UnitParamViewController: UIViewController {
     */
 
     // MARK: - 数据定义区
-    let batteryMain: [ParameterType]  = []
-    let batterySub: [ParameterType] = []
+    let batteryMain: [ParameterType]  = [
+        ParameterType("总电量", "level", {(value) in return convertDoubleValue(value, withRate: 0.1)}, "%"),
+        ParameterType("电池老化程度", "health", {(value) in return convertDoubleValue(value, withRate: 0.1)}, "%"),
+        ParameterType("总电压", "volt", {(value) in return convertDoubleValue(value, withRate: 0.1)}, "V"),
+        ParameterType("总电流", "current", {(value) in return convertDoubleValue(value, withRate: 0.1)}, "A"),
+        ParameterType("总功率", "power", {(value) in return convertDoubleValue(value, withRate: 0.01)}, "kw"),
+        ParameterType("充电已用时间", "", {(value) in return value as? String}, "秒"),
+        ParameterType("充电剩余时间", "", {(value) in return value as? String}, "秒"),
+        ParameterType("最高温度", "temperature", {(value) in return converSubDouble(value, subKey: "max", rate: 0.01)}, "˚C"),
+        ParameterType("平均温度", "temperature", {(value) in return converSubDouble(value, subKey: "average", rate: 0.01)}, "˚C"),
+        ParameterType("正极绝缘阻抗", "resistance", {(value) in return converSubDouble(value, subKey: "positive", rate: 1.0)}, "kΩ"),
+        ParameterType("负极绝缘阻抗", "resistance", {(value) in return converSubDouble(value, subKey: "negative", rate: 1.0)}, "kΩ"),
+    ]
+
+
+    let batterySub: [ParameterType] = [
+
+    ]
 
     let driveMain = [
         ParameterType("系统版本", "softver", {(value) in return value as? String}, ""),
