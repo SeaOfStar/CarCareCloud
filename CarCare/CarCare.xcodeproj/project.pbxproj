@@ -33,10 +33,10 @@
 		F8220CDF1C7714ED00269012 /* CASplitedCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8220CDD1C7714ED00269012 /* CASplitedCircleLayer.swift */; };
 		F8233B751C914F4C0084A665 /* UnitParamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8233B741C914F4C0084A665 /* UnitParamViewController.swift */; };
 		F8233B761C914F4C0084A665 /* UnitParamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8233B741C914F4C0084A665 /* UnitParamViewController.swift */; };
-		F8233B781C91513C0084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B771C91513C0084A665 /* BiMoFramework.framework */; };
-		F8233B791C91513C0084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B771C91513C0084A665 /* BiMoFramework.framework */; };
-		F8233B7A1C91514C0084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B771C91513C0084A665 /* BiMoFramework.framework */; };
-		F8233B7B1C91514C0084A665 /* BiMoFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B771C91513C0084A665 /* BiMoFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8233B841C918ED50084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B831C918ED50084A665 /* BiMoFramework.framework */; };
+		F8233B851C918ED50084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B831C918ED50084A665 /* BiMoFramework.framework */; };
+		F8233B861C918EDF0084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B831C918ED50084A665 /* BiMoFramework.framework */; };
+		F8233B871C918EDF0084A665 /* BiMoFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B831C918ED50084A665 /* BiMoFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F88385C61C76DDE700DA1875 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C51C76DDE700DA1875 /* DoorViewController.swift */; };
 		F88385C71C76DDE700DA1875 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C51C76DDE700DA1875 /* DoorViewController.swift */; };
 		F88385C91C76F20700DA1875 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C81C76F20700DA1875 /* DashboardViewController.swift */; };
@@ -89,7 +89,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F8233B7B1C91514C0084A665 /* BiMoFramework.framework in Embed Frameworks */,
+				F8233B871C918EDF0084A665 /* BiMoFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,7 +113,7 @@
 		F8013ABD1C76B13100B1F2FC /* CocoaMQTTMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaMQTTMessage.swift; sourceTree = "<group>"; };
 		F8220CDD1C7714ED00269012 /* CASplitedCircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CASplitedCircleLayer.swift; sourceTree = "<group>"; };
 		F8233B741C914F4C0084A665 /* UnitParamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitParamViewController.swift; sourceTree = "<group>"; };
-		F8233B771C91513C0084A665 /* BiMoFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiMoFramework.framework; sourceTree = "<group>"; };
+		F8233B831C918ED50084A665 /* BiMoFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiMoFramework.framework; sourceTree = "<group>"; };
 		F88385C51C76DDE700DA1875 /* DoorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoorViewController.swift; sourceTree = "<group>"; };
 		F88385C81C76F20700DA1875 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		F8B5CA661C75BC0200D74569 /* CarCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,8 +144,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8233B7A1C91514C0084A665 /* BiMoFramework.framework in Frameworks */,
-				F8233B781C91513C0084A665 /* BiMoFramework.framework in Frameworks */,
+				F8233B861C918EDF0084A665 /* BiMoFramework.framework in Frameworks */,
+				F8233B841C918ED50084A665 /* BiMoFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8233B791C91513C0084A665 /* BiMoFramework.framework in Frameworks */,
+				F8233B851C918ED50084A665 /* BiMoFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +194,7 @@
 		F8013AAB1C76B05600B1F2FC /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				F8233B771C91513C0084A665 /* BiMoFramework.framework */,
+				F8233B831C918ED50084A665 /* BiMoFramework.framework */,
 				F8013AAC1C76B05600B1F2FC /* MQTT */,
 			);
 			path = lib;
