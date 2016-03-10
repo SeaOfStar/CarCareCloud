@@ -24,6 +24,12 @@ class CarParamTableViewController: UITableViewController {
     // 用于控制外围透明边框的view
     @IBOutlet weak var baseViewForStatusPanel: UIView!
     @IBOutlet weak var baseViewForMainStatus: UIView!
+    @IBOutlet weak var baseViewFor续航: UIView!
+    @IBOutlet weak var baseViewFor发动机: UIView!
+    @IBOutlet weak var baseViewFor电池组: UIView!
+    @IBOutlet weak var baseViewFor视频: UIView!
+    @IBOutlet weak var baseViewFor空调: UIView!
+    @IBOutlet weak var baseViewFor地图: UIView!
 
 
 
@@ -31,8 +37,19 @@ class CarParamTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.addEdgeForCell()
+
+    }
+
+    private func addEdgeForCell() {
         CarParamTableViewController.cutViewEdge(baseViewForMainStatus)
         CarParamTableViewController.cutViewEdge(baseViewForStatusPanel)
+        CarParamTableViewController.cutViewEdge(baseViewFor续航)
+        CarParamTableViewController.cutViewEdge(baseViewFor发动机)
+        CarParamTableViewController.cutViewEdge(baseViewFor电池组)
+        CarParamTableViewController.cutViewEdge(baseViewFor视频)
+        CarParamTableViewController.cutViewEdge(baseViewFor空调)
+        CarParamTableViewController.cutViewEdge(baseViewFor地图)
     }
 
     private var coreData: [String: AnyObject]!

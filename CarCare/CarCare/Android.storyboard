@@ -689,7 +689,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="96" id="wca-gu-Igd" userLabel="录像">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="96" id="wca-gu-Igd" userLabel="视频">
                                         <rect key="frame" x="0.0" y="608" width="600" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wca-gu-Igd" id="Ouk-DL-3qf">
@@ -829,6 +829,12 @@
                     <connections>
                         <outlet property="baseViewForMainStatus" destination="WqL-tf-lhU" id="RtV-JP-6tE"/>
                         <outlet property="baseViewForStatusPanel" destination="Rfs-ib-ygd" id="fiM-1c-kCv"/>
+                        <outlet property="baseViewFor发动机" destination="5xr-GC-nO4" id="OD3-37-qDi"/>
+                        <outlet property="baseViewFor地图" destination="Qyd-5B-xki" id="x5h-64-ou5"/>
+                        <outlet property="baseViewFor电池组" destination="nVM-4z-w9n" id="4g4-bc-5iY"/>
+                        <outlet property="baseViewFor空调" destination="7cE-Gt-xqA" id="Am1-TX-mq5"/>
+                        <outlet property="baseViewFor续航" destination="WKq-ow-MqV" id="IHe-tu-wkb"/>
+                        <outlet property="baseViewFor视频" destination="bYd-Qw-8EL" id="MYA-yd-Nu4"/>
                         <outlet property="statusPanelCell" destination="a0d-IO-mps" id="NVd-Og-yBG"/>
                         <outlet property="车辆状态cell" destination="Wb2-7M-ugW" id="SEx-p8-w3g"/>
                     </connections>
