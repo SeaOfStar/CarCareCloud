@@ -11,18 +11,28 @@ import UIKit
 class CarParamTableViewController: UITableViewController {
 
     // MARK: - 子画面
-    var speedMeter: SpeedoMeterViewController!
-    var angelMeter: SpeedoMeterViewController!
+    private var speedMeter: SpeedoMeterViewController!
+    private var angelMeter: SpeedoMeterViewController!
+    private var statusPanel: DashboardViewController!
+
+
+    // cell
+    @IBOutlet weak var statusPanelCell: UITableViewCell!
+    @IBOutlet weak var 车辆状态cell: UITableViewCell!
+
+
+    // 用于控制外围透明边框的view
+    @IBOutlet weak var baseViewForStatusPanel: UIView!
+    @IBOutlet weak var baseViewForMainStatus: UIView!
+
+
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        CarParamTableViewController.cutViewEdge(baseViewForMainStatus)
+        CarParamTableViewController.cutViewEdge(baseViewForStatusPanel)
     }
 
     private var coreData: [String: AnyObject]!
@@ -87,7 +97,16 @@ class CarParamTableViewController: UITableViewController {
     private func reloadOtherParam() {
 
     }
-    
+
+
+    class func cutViewEdge(view : UIView) {
+        let layer = view.layer
+//        layer.borderColor = UIColor.clearColor().CGColor
+//        layer.borderWidth = 5
+        layer.cornerRadius = 6
+
+        view.clipsToBounds = true
+    }
 
 
     override func didReceiveMemoryWarning() {
@@ -151,6 +170,9 @@ class CarParamTableViewController: UITableViewController {
 
         case "转速表":
             self.angelMeter = segue.destinationViewController as! SpeedoMeterViewController
+
+        case "状态面板":
+            self.statusPanel = segue.destinationViewController as! DashboardViewController
 
         default:
             break
