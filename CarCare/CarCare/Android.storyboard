@@ -357,7 +357,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="194.5" height="48"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIB-Xs-vrR">
-                                                                    <rect key="frame" x="90" y="24" width="14.5" height="24"/>
+                                                                    <rect key="frame" x="4" y="24" width="186.5" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                     <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -371,6 +371,7 @@
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="SIB-Xs-vrR" secondAttribute="trailing" constant="4" id="9NV-v4-4xj"/>
                                                                 <constraint firstItem="SIB-Xs-vrR" firstAttribute="height" secondItem="C7x-dM-UIZ" secondAttribute="height" id="J2E-ng-pgp"/>
                                                                 <constraint firstItem="C7x-dM-UIZ" firstAttribute="top" secondItem="PXd-md-6yq" secondAttribute="top" id="Peu-zV-2Nu"/>
                                                                 <constraint firstItem="SIB-Xs-vrR" firstAttribute="centerX" secondItem="PXd-md-6yq" secondAttribute="centerX" id="RiM-yS-gMR"/>
@@ -384,7 +385,7 @@
                                                             <rect key="frame" x="194" y="0.0" width="195" height="48"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdY-om-get">
-                                                                    <rect key="frame" x="90" y="24" width="14.5" height="24"/>
+                                                                    <rect key="frame" x="3" y="24" width="187.5" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                     <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -400,6 +401,7 @@
                                                             <constraints>
                                                                 <constraint firstItem="rx3-cS-w4e" firstAttribute="centerX" secondItem="qSg-y6-BHx" secondAttribute="centerX" id="2j7-wX-jlO"/>
                                                                 <constraint firstItem="bdY-om-get" firstAttribute="top" secondItem="rx3-cS-w4e" secondAttribute="bottom" id="3Dh-tW-GaF"/>
+                                                                <constraint firstAttribute="trailing" secondItem="bdY-om-get" secondAttribute="trailing" constant="4" id="7V3-7x-xD4"/>
                                                                 <constraint firstItem="bdY-om-get" firstAttribute="height" secondItem="rx3-cS-w4e" secondAttribute="height" id="A0r-nJ-Gzh"/>
                                                                 <constraint firstItem="bdY-om-get" firstAttribute="centerX" secondItem="qSg-y6-BHx" secondAttribute="centerX" id="HYe-E1-jVi"/>
                                                                 <constraint firstItem="rx3-cS-w4e" firstAttribute="top" secondItem="qSg-y6-BHx" secondAttribute="top" id="Hrj-UK-zs8"/>
@@ -410,7 +412,7 @@
                                                             <rect key="frame" x="389" y="0.0" width="194.5" height="48"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnY-p2-At5">
-                                                                    <rect key="frame" x="90" y="24" width="14.5" height="24"/>
+                                                                    <rect key="frame" x="4" y="24" width="186.5" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                     <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -429,6 +431,7 @@
                                                                 <constraint firstItem="HJO-bq-ixj" firstAttribute="top" secondItem="Bz2-PF-bPK" secondAttribute="top" id="Kdi-bo-wuQ"/>
                                                                 <constraint firstItem="CnY-p2-At5" firstAttribute="height" secondItem="HJO-bq-ixj" secondAttribute="height" id="c86-QZ-QC4"/>
                                                                 <constraint firstAttribute="bottom" secondItem="CnY-p2-At5" secondAttribute="bottom" id="cXf-rm-4uO"/>
+                                                                <constraint firstAttribute="trailing" secondItem="CnY-p2-At5" secondAttribute="trailing" constant="4" id="f85-e9-5Su"/>
                                                                 <constraint firstItem="CnY-p2-At5" firstAttribute="top" secondItem="HJO-bq-ixj" secondAttribute="bottom" id="hd8-Fn-TeF"/>
                                                                 <constraint firstItem="CnY-p2-At5" firstAttribute="top" secondItem="HJO-bq-ixj" secondAttribute="bottom" id="qjy-SZ-ouD"/>
                                                                 <constraint firstItem="HJO-bq-ixj" firstAttribute="centerX" secondItem="Bz2-PF-bPK" secondAttribute="centerX" id="qnE-ad-8Pg"/>
@@ -477,7 +480,7 @@
                                                                 <constraint firstAttribute="width" secondItem="Wk5-Mb-njg" secondAttribute="height" multiplier="1:1" id="aQ3-S6-0FG"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4台设备" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EL8-Fr-07v">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EL8-Fr-07v">
                                                             <rect key="frame" x="456" y="30" width="80" height="19.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="uUr-m1-Kio"/>
@@ -835,7 +838,18 @@
                         <outlet property="baseViewFor空调" destination="7cE-Gt-xqA" id="Am1-TX-mq5"/>
                         <outlet property="baseViewFor续航" destination="WKq-ow-MqV" id="IHe-tu-wkb"/>
                         <outlet property="baseViewFor视频" destination="bYd-Qw-8EL" id="MYA-yd-Nu4"/>
+                        <outlet property="driveSpeedLabel" destination="8cB-yK-vTf" id="eDU-xx-fHv"/>
+                        <outlet property="driverVersionLabel" destination="CNN-Gd-RuQ" id="yJY-tB-Ic1"/>
+                        <outlet property="seriesNumberLabel" destination="ITS-NY-oNY" id="RY7-Fm-5Oq"/>
                         <outlet property="statusPanelCell" destination="a0d-IO-mps" id="NVd-Og-yBG"/>
+                        <outlet property="发动机数量label" destination="EL8-Fr-07v" id="eun-yE-1jE"/>
+                        <outlet property="可续航里程label" destination="bdY-om-get" id="fR3-em-bdf"/>
+                        <outlet property="整体定位状态label" destination="RET-ly-MAf" id="PPR-fg-yCY"/>
+                        <outlet property="整体电池状态label" destination="qwT-Go-qdZ" id="U5U-zN-aTm"/>
+                        <outlet property="整体车辆状态label" destination="tmh-ke-TMq" id="sNs-nb-JII"/>
+                        <outlet property="整体驱动器状态label" destination="ppC-le-Ghy" id="BVP-OC-O7d"/>
+                        <outlet property="百公里耗电Label" destination="SIB-Xs-vrR" id="q17-B7-Ohe"/>
+                        <outlet property="累计里程label" destination="CnY-p2-At5" id="a5q-CV-KyV"/>
                         <outlet property="车辆状态cell" destination="Wb2-7M-ugW" id="SEx-p8-w3g"/>
                     </connections>
                 </tableViewController>
