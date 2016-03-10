@@ -141,7 +141,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b89-Dd-BSN" customClass="BMOCSegmentedControl">
-                                <rect key="frame" x="150" y="0.0" width="300" height="44"/>
+                                <rect key="frame" x="150" y="4" width="300" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="PJx-pv-uoC"/>
@@ -149,7 +149,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wWZ-uv-gUN">
-                                <rect key="frame" x="0.0" y="52" width="600" height="484"/>
+                                <rect key="frame" x="0.0" y="56" width="600" height="480"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="参数cell" id="rIP-1E-JYg">
@@ -211,7 +211,7 @@
                             <constraint firstAttribute="trailing" secondItem="fbz-Cq-rQh" secondAttribute="trailing" id="IQN-HX-vws"/>
                             <constraint firstItem="fbz-Cq-rQh" firstAttribute="top" secondItem="8CW-9c-nae" secondAttribute="bottom" id="Rpe-TO-COQ"/>
                             <constraint firstItem="b89-Dd-BSN" firstAttribute="centerX" secondItem="uh0-bU-az3" secondAttribute="centerX" id="VtE-rE-tco"/>
-                            <constraint firstItem="b89-Dd-BSN" firstAttribute="top" secondItem="8CW-9c-nae" secondAttribute="bottom" id="deo-v9-JXQ"/>
+                            <constraint firstItem="b89-Dd-BSN" firstAttribute="top" secondItem="8CW-9c-nae" secondAttribute="bottom" constant="4" id="deo-v9-JXQ"/>
                             <constraint firstItem="wWZ-uv-gUN" firstAttribute="top" secondItem="b89-Dd-BSN" secondAttribute="bottom" constant="8" id="fEn-QV-Ovn"/>
                             <constraint firstItem="OIq-gj-BYf" firstAttribute="top" secondItem="wWZ-uv-gUN" secondAttribute="bottom" id="gyR-tz-gdC"/>
                             <constraint firstItem="OIq-gj-BYf" firstAttribute="top" secondItem="fbz-Cq-rQh" secondAttribute="bottom" id="jAr-tE-8w0"/>
@@ -229,10 +229,10 @@
             </objects>
             <point key="canvasLocation" x="2692" y="1056"/>
         </scene>
-        <!--Car Param Table View Controller-->
+        <!--车辆监控-->
         <scene sceneID="XgL-dv-FQG">
             <objects>
-                <tableViewController id="1kY-FD-4ma" customClass="CarParamTableViewController" customModule="CarCare" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="车辆监控" id="1kY-FD-4ma" customClass="CarParamTableViewController" customModule="CarCare" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wk8-ZQ-wav">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

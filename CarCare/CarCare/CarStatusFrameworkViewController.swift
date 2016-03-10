@@ -39,6 +39,8 @@ class CarStatusFrameworkViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "车辆监控"
+
         let app = UIApplication.sharedApplication().delegate as! AppDelegate
         if let token = app.clientID {
             self.token = token

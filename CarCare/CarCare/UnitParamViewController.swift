@@ -77,6 +77,8 @@ class UnitParamViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = self.isBattery ? "电池详细" : "驱动器详细"
+
         // Do any additional setup after loading the view.
         self.tabbar.titles = ["整体", "单体1", "单体2", "单体3", "单体4"]
         self.tabbar.delegate = self
@@ -117,7 +119,12 @@ class UnitParamViewController: UIViewController {
 
 
     let batterySub: [ParameterType] = [
-
+        ParameterType("单体编号", "no", {(value) in return value as? String}, "A"),
+        ParameterType("电池状态", "status", {(value) in return ""}, ""),
+        ParameterType("电池电压", "volt", {(value) in return convertDoubleValue(value, withRate: 0.001)}, "V"),
+        ParameterType("电流", "current", {(value) in return convertDoubleValue(value, withRate: 0.1)}, "A"),
+        ParameterType("充放电功率", "power", {(value) in return convertDoubleValue(value, withRate: 0.01)}, "kw"),
+        ParameterType("温度", "temperature", {(value) in return convertDoubleValue(value, withRate: 1.0)}, "˚C"),
     ]
 
     let driveMain = [
@@ -153,6 +160,7 @@ extension UnitParamViewController: BMOCSegmentedControlDelegate {
 
     func segmentValueDidChanged(control: BMOCSegmentedControl!) {
         self.selection = control.selection
+        self.reloadData()
     }
 
 }
