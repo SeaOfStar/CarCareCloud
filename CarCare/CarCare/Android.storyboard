@@ -594,7 +594,7 @@
                                                                 <constraint firstAttribute="width" secondItem="reR-K5-72v" secondAttribute="height" multiplier="1:1" id="nMl-X4-Wuc"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4台设备" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7E9-aP-gI3">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7E9-aP-gI3">
                                                             <rect key="frame" x="456" y="30" width="80" height="19.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="80" id="4Cj-vZ-m3T"/>
@@ -844,10 +844,14 @@
                         <outlet property="statusPanelCell" destination="a0d-IO-mps" id="NVd-Og-yBG"/>
                         <outlet property="发动机数量label" destination="EL8-Fr-07v" id="eun-yE-1jE"/>
                         <outlet property="可续航里程label" destination="bdY-om-get" id="fR3-em-bdf"/>
+                        <outlet property="总功率label" destination="CDd-k3-kDY" id="lRR-2e-hAF"/>
+                        <outlet property="总电压label" destination="DyI-LX-nGU" id="QeZ-WP-BLp"/>
+                        <outlet property="总电流label" destination="pRI-wT-QK1" id="29Q-S5-cAo"/>
                         <outlet property="整体定位状态label" destination="RET-ly-MAf" id="PPR-fg-yCY"/>
                         <outlet property="整体电池状态label" destination="qwT-Go-qdZ" id="U5U-zN-aTm"/>
                         <outlet property="整体车辆状态label" destination="tmh-ke-TMq" id="sNs-nb-JII"/>
                         <outlet property="整体驱动器状态label" destination="ppC-le-Ghy" id="BVP-OC-O7d"/>
+                        <outlet property="电池数量label" destination="7E9-aP-gI3" id="aWy-0f-rmh"/>
                         <outlet property="百公里耗电Label" destination="SIB-Xs-vrR" id="q17-B7-Ohe"/>
                         <outlet property="累计里程label" destination="CnY-p2-At5" id="a5q-CV-KyV"/>
                         <outlet property="车辆状态cell" destination="Wb2-7M-ugW" id="SEx-p8-w3g"/>

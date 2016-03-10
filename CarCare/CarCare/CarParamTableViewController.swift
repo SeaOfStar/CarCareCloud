@@ -102,19 +102,53 @@ class CarParamTableViewController: UITableViewController {
 
         // 更新发动机参数
         self.reloadDrive()
+
+        // 更新电池相关
+        self.reloadBattery()
     }
 
-    // MARK: 续航情况
+    // MARK: 电池情况
 
+    @IBOutlet weak var 总电压label: UILabel!
+    @IBOutlet weak var 总电流label: UILabel!
+    @IBOutlet weak var 总功率label: UILabel!
+
+    @IBOutlet weak var 电池数量label: UILabel!
+
+    private func reloadBattery() {
+        NSLog("battery Data = \r\(self.batteryData)")
+
+        if let volt = self.batteryData?["volt"] as? Double {
+            let voltValue = volt * 0.1
+            self.总电压label.text = "\(voltValue)v"
+        }
+
+        if let power = self.batteryData?["power"] as? Double {
+            let powerValue = power * 0.01
+            self.总功率label.text = String(format: "%.2fkw", powerValue)
+        }
+
+
+        if let 电流 = self.batteryData?["current"] as? Double {
+            let 安培数 = 电流 * 0.1
+            self.总电流label.text = String(format: "%.2fA", 安培数)
+        }
+
+
+        // 设备数
+        if let units = self.batteryData?["units"] as? NSArray {
+            self.电池数量label.text = "\(units.count)块电池"
+        }
+    }
+
+
+
+    // MARK: 续航情况
     @IBOutlet weak var 百公里耗电Label: UILabel!
     @IBOutlet weak var 可续航里程label: UILabel!
     @IBOutlet weak var 累计里程label: UILabel!
-    
 
     private func reloadEndurance() {
-
-        NSLog("drive Data = \r\(self.driveData)")
-
         if let oil = self.driveData?["consumption"] as? Int {
             let kwh = Double(oil) * 0.1
             self.百公里耗电Label.text = "\(kwh)度"
@@ -148,7 +182,6 @@ class CarParamTableViewController: UITableViewController {
                 }
             }
         }
-
     }
 
 
