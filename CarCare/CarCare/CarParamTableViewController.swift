@@ -189,7 +189,7 @@ class CarParamTableViewController: UITableViewController {
             if let speed = theDriverInfo["speed"] {
                 let speedValue = speed as! Double * 0.1     // 单位0.1km/h
                 speedMeter.rate = speedValue / 260.0
-                speedMeter.text = "\(speedValue)"
+                speedMeter.text = String(format: "%.2f", speedValue);
             }
 
             // 这个地方具体的业务逻辑不太清楚，等问问翟
@@ -250,7 +250,7 @@ class CarParamTableViewController: UITableViewController {
 
             if let speed = theDriverInfo["speed"] {
                 let speedValue = speed as! Double * 0.1 // 单位是0.1 km/h
-                self.driveSpeedLabel.text = "\(speedValue)"
+                self.driveSpeedLabel.text = String(format: "%.2f", speedValue)
             }
 
             // 设备数

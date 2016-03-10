@@ -73,6 +73,6 @@
     </scenes>
     <resources>
         <image name="kmph" width="80" height="80"/>
-        <image name="mask" width="80" height="80"/>
+        <image name="mask" width="240" height="240"/>
     </resources>
 </document>
