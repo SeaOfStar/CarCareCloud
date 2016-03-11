@@ -52,7 +52,10 @@ class SpeedPanel: UIView {
 
     private func configDoubleLayer() {
         left.colors = [middleColor.CGColor, startColor.CGColor]
+//        left.endPoint = CGPoint(x: 1.0, y: 1.0)
+
         right.colors = [middleColor.CGColor, endColor.CGColor]
+//        right.startPoint = CGPoint(x: 0.0, y: 0.0)
     }
 
     private func resizeSubLayer() {

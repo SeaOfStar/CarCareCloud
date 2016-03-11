@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "mask副本 2.png",
+      "filename" : "mask@1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "mask副本.png",
+      "filename" : "mask@2x.png",
       "scale" : "2x"
     },
     {
