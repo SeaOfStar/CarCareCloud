@@ -140,7 +140,7 @@ class CarParamTableViewController: UITableViewController {
 
         if let volt = self.batteryData?["volt"] as? Double {
             let voltValue = volt * 0.1
-            self.总电压label.text = "\(voltValue)v"
+            self.总电压label.text = String(format: "%.2fv", voltValue)
         }
 
         if let power = self.batteryData?["power"] as? Double {

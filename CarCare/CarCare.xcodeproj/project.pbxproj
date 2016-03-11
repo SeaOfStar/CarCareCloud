@@ -125,7 +125,7 @@
 		F891BC6A1C925D8500504F13 /* SpeedPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedPanel.swift; sourceTree = "<group>"; };
 		F891BC6D1C92965300504F13 /* ReplicatorSpeedMeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplicatorSpeedMeter.swift; sourceTree = "<group>"; };
 		F891BC701C92A79400504F13 /* SpeedMeterGridMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedMeterGridMask.swift; sourceTree = "<group>"; };
-		F8B5CA661C75BC0200D74569 /* CarCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B5CA661C75BC0200D74569 /* 车辆监控.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "车辆监控.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B5CA691C75BC0200D74569 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B5CA6B1C75BC0200D74569 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8B5CA6E1C75BC0200D74569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 		F8B5CA671C75BC0200D74569 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8B5CA661C75BC0200D74569 /* CarCare.app */,
+				F8B5CA661C75BC0200D74569 /* 车辆监控.app */,
 				F8B5CA7D1C75BC0300D74569 /* CarCareTests.xctest */,
 				F8B5CA881C75BC0300D74569 /* CarCareUITests.xctest */,
 			);
@@ -308,9 +308,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F8B5CA651C75BC0200D74569 /* CarCare */ = {
+		F8B5CA651C75BC0200D74569 /* 车辆监控 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8B5CA911C75BC0300D74569 /* Build configuration list for PBXNativeTarget "CarCare" */;
+			buildConfigurationList = F8B5CA911C75BC0300D74569 /* Build configuration list for PBXNativeTarget "车辆监控" */;
 			buildPhases = (
 				F8B5CA621C75BC0200D74569 /* Sources */,
 				F8B5CA631C75BC0200D74569 /* Frameworks */,
@@ -321,9 +321,9 @@
 			);
 			dependencies = (
 			);
-			name = CarCare;
+			name = "车辆监控";
 			productName = CarCare;
-			productReference = F8B5CA661C75BC0200D74569 /* CarCare.app */;
+			productReference = F8B5CA661C75BC0200D74569 /* 车辆监控.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F8B5CA7C1C75BC0300D74569 /* CarCareTests */ = {
@@ -399,7 +399,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F8B5CA651C75BC0200D74569 /* CarCare */,
+				F8B5CA651C75BC0200D74569 /* 车辆监控 */,
 				F8B5CA7C1C75BC0300D74569 /* CarCareTests */,
 				F8B5CA871C75BC0300D74569 /* CarCareUITests */,
 			);
@@ -515,12 +515,12 @@
 /* Begin PBXTargetDependency section */
 		F8B5CA7F1C75BC0300D74569 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F8B5CA651C75BC0200D74569 /* CarCare */;
+			target = F8B5CA651C75BC0200D74569 /* 车辆监控 */;
 			targetProxy = F8B5CA7E1C75BC0300D74569 /* PBXContainerItemProxy */;
 		};
 		F8B5CA8A1C75BC0300D74569 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F8B5CA651C75BC0200D74569 /* CarCare */;
+			target = F8B5CA651C75BC0200D74569 /* 车辆监控 */;
 			targetProxy = F8B5CA891C75BC0300D74569 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -771,7 +771,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8B5CA911C75BC0300D74569 /* Build configuration list for PBXNativeTarget "CarCare" */ = {
+		F8B5CA911C75BC0300D74569 /* Build configuration list for PBXNativeTarget "车辆监控" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8B5CA921C75BC0300D74569 /* Debug */,

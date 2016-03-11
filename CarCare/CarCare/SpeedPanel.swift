@@ -82,7 +82,7 @@ class SpeedPanel: UIView {
         let tanA = 95.0 / 70.0      // 半角的tan值
         let angle = atan(tanA)
 
-        NSLog("angle = \(angle / M_PI * 180.0)˚")
+//        NSLog("angle = \(angle / M_PI * 180.0)˚")
 
         let startAngle = CGFloat(M_PI_2 + angle)
         let endAngle = CGFloat(M_PI_2 - angle)
@@ -99,7 +99,9 @@ class SpeedPanel: UIView {
 
     var endRate: Double = 0.0 {
         didSet {
-            self.mask.strokeEnd = CGFloat(endRate)
+            UIView.animateWithDuration(1.0) { () -> Void in
+                self.mask.strokeEnd = CGFloat(self.endRate)
+            }
         }
     }
 
