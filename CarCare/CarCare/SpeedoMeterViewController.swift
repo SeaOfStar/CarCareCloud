@@ -10,14 +10,13 @@ import UIKit
 
 class SpeedoMeterViewController: UIViewController {
 
-    @IBOutlet weak var colorImage: UIImageView!
-    @IBOutlet weak var maskImage: UIImageView!
+    @IBOutlet weak var colorView: SpeedPanel!
 
-    private var maskLayer = CASplitedCircleLayer()
+    @IBOutlet weak var maskImage: UIImageView!
 
     var rate:Double = 0.0 {
         didSet {
-            maskLayer.endRate = CGFloat(max(0.0, min(1.0, rate)))
+            colorView.endRate = rate
         }
     }
 
@@ -43,23 +42,6 @@ class SpeedoMeterViewController: UIViewController {
         // Do any additional setup after loading the view.
 
 
-    }
-
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-
-        maskLayer.bounds = colorImage.bounds
-        maskLayer.startRate = 0.0
-        maskLayer.endRate = 0.5
-
-        maskLayer.borderColor = UIColor.blueColor().CGColor
-        maskLayer.borderWidth = 3.0
-
-        maskLayer.backgroundColor = UIColor(white: 0.4, alpha: 0.2).CGColor
-
-        maskLayer.position = CGPoint(x: colorImage.bounds.size.width / 2.0, y: colorImage.bounds.size.height / 2.0)
-
-        colorImage.layer.mask = maskLayer
     }
 
     override func didReceiveMemoryWarning() {

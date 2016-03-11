@@ -41,6 +41,8 @@
 		F88385C71C76DDE700DA1875 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C51C76DDE700DA1875 /* DoorViewController.swift */; };
 		F88385C91C76F20700DA1875 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C81C76F20700DA1875 /* DashboardViewController.swift */; };
 		F88385CA1C76F20700DA1875 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C81C76F20700DA1875 /* DashboardViewController.swift */; };
+		F891BC6B1C925D8500504F13 /* SpeedPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891BC6A1C925D8500504F13 /* SpeedPanel.swift */; };
+		F891BC6C1C925D8500504F13 /* SpeedPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891BC6A1C925D8500504F13 /* SpeedPanel.swift */; };
 		F8B5CA6A1C75BC0200D74569 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B5CA691C75BC0200D74569 /* AppDelegate.swift */; };
 		F8B5CA6C1C75BC0200D74569 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B5CA6B1C75BC0200D74569 /* ViewController.swift */; };
 		F8B5CA6F1C75BC0200D74569 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CA6D1C75BC0200D74569 /* Main.storyboard */; };
@@ -116,6 +118,7 @@
 		F8233B831C918ED50084A665 /* BiMoFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiMoFramework.framework; sourceTree = "<group>"; };
 		F88385C51C76DDE700DA1875 /* DoorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoorViewController.swift; sourceTree = "<group>"; };
 		F88385C81C76F20700DA1875 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		F891BC6A1C925D8500504F13 /* SpeedPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedPanel.swift; sourceTree = "<group>"; };
 		F8B5CA661C75BC0200D74569 /* CarCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B5CA691C75BC0200D74569 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B5CA6B1C75BC0200D74569 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -183,7 +186,6 @@
 				F8220CDC1C77147000269012 /* 控件 */,
 				F88385C51C76DDE700DA1875 /* DoorViewController.swift */,
 				F8B5CA6D1C75BC0200D74569 /* Main.storyboard */,
-				F8F7CE0D1C90305C0087C392 /* SpeedMeter.storyboard */,
 				F8F7CE091C902FED0087C392 /* StatusPanel.storyboard */,
 				F8013AA71C76AF2200B1F2FC /* CarStatusViewController.swift */,
 				F88385C81C76F20700DA1875 /* DashboardViewController.swift */,
@@ -220,6 +222,8 @@
 			children = (
 				F8220CDD1C7714ED00269012 /* CASplitedCircleLayer.swift */,
 				F8DF7C191C7BEECE002C66B1 /* SpeedoMeterViewController.swift */,
+				F891BC6A1C925D8500504F13 /* SpeedPanel.swift */,
+				F8F7CE0D1C90305C0087C392 /* SpeedMeter.storyboard */,
 			);
 			name = "控件";
 			sourceTree = "<group>";
@@ -447,6 +451,7 @@
 				F8F7CE1D1C903FDB0087C392 /* CarParamTableViewController.swift in Sources */,
 				F88385C91C76F20700DA1875 /* DashboardViewController.swift in Sources */,
 				F8DF7C1A1C7BEECE002C66B1 /* SpeedoMeterViewController.swift in Sources */,
+				F891BC6B1C925D8500504F13 /* SpeedPanel.swift in Sources */,
 				F8013ABE1C76B13100B1F2FC /* CocoaMQTT.swift in Sources */,
 				F8013AB41C76B07C00B1F2FC /* GCDAsyncSocket.m in Sources */,
 				F8B5CA6A1C75BC0200D74569 /* AppDelegate.swift in Sources */,
@@ -477,6 +482,7 @@
 			files = (
 				F8F7CE181C903E390087C392 /* CarStatusFrameworkViewController.swift in Sources */,
 				F8F7CE1E1C903FDB0087C392 /* CarParamTableViewController.swift in Sources */,
+				F891BC6C1C925D8500504F13 /* SpeedPanel.swift in Sources */,
 				F8233B761C914F4C0084A665 /* UnitParamViewController.swift in Sources */,
 				F8013AB61C76B07C00B1F2FC /* GCDAsyncSocket.m in Sources */,
 				F8013AC61C76B13100B1F2FC /* CocoaMQTTMessage.swift in Sources */,
