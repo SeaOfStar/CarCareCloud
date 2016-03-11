@@ -78,8 +78,16 @@ class SpeedPanel: UIView {
     private var path: UIBezierPath {
         let center = CGPoint(x: bounds.size.width / 2.0, y: bounds.size.height / 2.0)
 
-        NSLog("center = \(center)")
-        let p = UIBezierPath(arcCenter: center, radius: radius, startAngle: 0.75 * CGFloat(M_PI), endAngle: 0.25 * CGFloat(M_PI), clockwise: true)
+        // 精确计算角度，为了配合图片
+        let tanA = 95.0 / 70.0      // 半角的tan值
+        let angle = atan(tanA)
+
+        NSLog("angle = \(angle / M_PI * 180.0)˚")
+
+        let startAngle = CGFloat(M_PI_2 + angle)
+        let endAngle = CGFloat(M_PI_2 - angle)
+
+        let p = UIBezierPath(arcCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
 
         return p
     }
