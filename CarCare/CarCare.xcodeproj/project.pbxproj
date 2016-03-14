@@ -33,10 +33,7 @@
 		F8220CDF1C7714ED00269012 /* CASplitedCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8220CDD1C7714ED00269012 /* CASplitedCircleLayer.swift */; };
 		F8233B751C914F4C0084A665 /* UnitParamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8233B741C914F4C0084A665 /* UnitParamViewController.swift */; };
 		F8233B761C914F4C0084A665 /* UnitParamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8233B741C914F4C0084A665 /* UnitParamViewController.swift */; };
-		F8233B841C918ED50084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B831C918ED50084A665 /* BiMoFramework.framework */; };
 		F8233B851C918ED50084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B831C918ED50084A665 /* BiMoFramework.framework */; };
-		F8233B861C918EDF0084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B831C918ED50084A665 /* BiMoFramework.framework */; };
-		F8233B871C918EDF0084A665 /* BiMoFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B831C918ED50084A665 /* BiMoFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F88385C61C76DDE700DA1875 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C51C76DDE700DA1875 /* DoorViewController.swift */; };
 		F88385C71C76DDE700DA1875 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C51C76DDE700DA1875 /* DoorViewController.swift */; };
 		F88385C91C76F20700DA1875 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C81C76F20700DA1875 /* DashboardViewController.swift */; };
@@ -59,6 +56,7 @@
 		F8B5CA9D1C75BC8F00D74569 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CA9A1C75BC8F00D74569 /* Login.storyboard */; };
 		F8DF7C1A1C7BEECE002C66B1 /* SpeedoMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF7C191C7BEECE002C66B1 /* SpeedoMeterViewController.swift */; };
 		F8DF7C1B1C7BEECE002C66B1 /* SpeedoMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF7C191C7BEECE002C66B1 /* SpeedoMeterViewController.swift */; };
+		F8E148C11C9529E8006C0DEF /* BMOCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E148C01C9529E8006C0DEF /* BMOCSegmentedControl.m */; };
 		F8F7CE0B1C902FED0087C392 /* StatusPanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE091C902FED0087C392 /* StatusPanel.storyboard */; };
 		F8F7CE0C1C902FED0087C392 /* StatusPanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE091C902FED0087C392 /* StatusPanel.storyboard */; };
 		F8F7CE0F1C90305C0087C392 /* SpeedMeter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE0D1C90305C0087C392 /* SpeedMeter.storyboard */; };
@@ -87,20 +85,6 @@
 			remoteInfo = CarCare;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F8233B7C1C91514C0084A665 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F8233B871C918EDF0084A665 /* BiMoFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F8013A9F1C75C0E900B1F2FC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +125,8 @@
 		F8B5CA8E1C75BC0300D74569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8B5CA9B1C75BC8F00D74569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		F8DF7C191C7BEECE002C66B1 /* SpeedoMeterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedoMeterViewController.swift; sourceTree = "<group>"; };
+		F8E148BF1C9529E8006C0DEF /* BMOCSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMOCSegmentedControl.h; sourceTree = "<group>"; };
+		F8E148C01C9529E8006C0DEF /* BMOCSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMOCSegmentedControl.m; sourceTree = "<group>"; };
 		F8F7CE0A1C902FED0087C392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StatusPanel.storyboard; sourceTree = "<group>"; };
 		F8F7CE0E1C90305C0087C392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SpeedMeter.storyboard; sourceTree = "<group>"; };
 		F8F7CE131C9031930087C392 /* Android.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Android.storyboard; sourceTree = "<group>"; };
@@ -153,8 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8233B861C918EDF0084A665 /* BiMoFramework.framework in Frameworks */,
-				F8233B841C918ED50084A665 /* BiMoFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +210,7 @@
 		F8220CDC1C77147000269012 /* 控件 */ = {
 			isa = PBXGroup;
 			children = (
+				F8E148BE1C9529D4006C0DEF /* tabbar */,
 				F8220CDD1C7714ED00269012 /* CASplitedCircleLayer.swift */,
 				F8DF7C191C7BEECE002C66B1 /* SpeedoMeterViewController.swift */,
 				F891BC6A1C925D8500504F13 /* SpeedPanel.swift */,
@@ -294,6 +279,15 @@
 			path = CarCareUITests;
 			sourceTree = "<group>";
 		};
+		F8E148BE1C9529D4006C0DEF /* tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				F8E148BF1C9529E8006C0DEF /* BMOCSegmentedControl.h */,
+				F8E148C01C9529E8006C0DEF /* BMOCSegmentedControl.m */,
+			);
+			name = tabbar;
+			sourceTree = "<group>";
+		};
 		F8F7CE121C90315F0087C392 /* 模仿安卓的界面 */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,7 +309,6 @@
 				F8B5CA621C75BC0200D74569 /* Sources */,
 				F8B5CA631C75BC0200D74569 /* Frameworks */,
 				F8B5CA641C75BC0200D74569 /* Resources */,
-				F8233B7C1C91514C0084A665 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -449,6 +442,7 @@
 				F8013AA01C75C0E900B1F2FC /* LoginViewController.swift in Sources */,
 				F8013AB71C76B07C00B1F2FC /* MSWeakTimer.m in Sources */,
 				F88385C61C76DDE700DA1875 /* DoorViewController.swift in Sources */,
+				F8E148C11C9529E8006C0DEF /* BMOCSegmentedControl.m in Sources */,
 				F891BC711C92A79400504F13 /* SpeedMeterGridMask.swift in Sources */,
 				F8220CDE1C7714ED00269012 /* CASplitedCircleLayer.swift in Sources */,
 				F8B5CA6C1C75BC0200D74569 /* ViewController.swift in Sources */,
@@ -655,15 +649,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: XIANGDONG WU (8NKW4X79C2)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CarCare/lib",
 				);
 				INFOPLIST_FILE = CarCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhc.mibd.CarCare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.furture.carcare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CarCare/lib/MQTT/CarCare-Bridging-Header.h";
@@ -677,15 +672,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: XIANGDONG WU (8NKW4X79C2)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CarCare/lib",
 				);
 				INFOPLIST_FILE = CarCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhc.mibd.CarCare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.furture.carcare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CarCare/lib/MQTT/CarCare-Bridging-Header.h";

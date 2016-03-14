@@ -71,7 +71,7 @@
         <!--Car Status Framework View Controller-->
         <scene sceneID="1BL-AQ-rAA">
             <objects>
-                <viewController id="32y-qR-Edd" customClass="CarStatusFrameworkViewController" customModule="CarCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="32y-qR-Edd" customClass="CarStatusFrameworkViewController" customModule="CarCareUITests" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I5r-3V-Gdo"/>
                         <viewControllerLayoutGuide type="bottom" id="cvp-Wt-xHV"/>
@@ -128,7 +128,7 @@
         <!--Unit Param View Controller-->
         <scene sceneID="x7R-7q-WbJ">
             <objects>
-                <viewController id="d5e-vD-Uzk" customClass="UnitParamViewController" customModule="CarCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d5e-vD-Uzk" customClass="UnitParamViewController" customModule="CarCareUITests" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8CW-9c-nae"/>
                         <viewControllerLayoutGuide type="bottom" id="OIq-gj-BYf"/>
@@ -232,7 +232,7 @@
         <!--车辆监控-->
         <scene sceneID="XgL-dv-FQG">
             <objects>
-                <tableViewController title="车辆监控" id="1kY-FD-4ma" customClass="CarParamTableViewController" customModule="CarCare" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="车辆监控" id="1kY-FD-4ma" customClass="CarParamTableViewController" customModule="CarCareUITests" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="wk8-ZQ-wav">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
