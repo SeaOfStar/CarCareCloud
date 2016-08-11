@@ -11,7 +11,8 @@ import UIKit
 class LoginHttpTask: NSObject {
 
 
-    static let IPAddress = "121.42.146.128"
+//    static let IPAddress = "121.42.146.128"
+    static let IPAddress = "114.55.129.27"
     static let port = 3000
     let urlString = "http://\(IPAddress):\(port)/user/signin/v/1"
 

@@ -11,7 +11,8 @@ import UIKit
 class CarStatusFrameworkViewController: UIViewController {
 
     // IP & 端口信息
-    static let MQTTServerIP = "121.42.146.128"
+//    static let MQTTServerIP = "121.42.146.128"
+    static let MQTTServerIP = "114.55.129.27"
     static let MQTTServerPort: UInt16 = 3010
 
     // 会话主体
