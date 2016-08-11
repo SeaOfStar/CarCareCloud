@@ -187,7 +187,8 @@ class CarParamTableViewController: UITableViewController {
     private func reloadSpeedMeter() {
         if let theDriverInfo = self.driveData {
             if let speed = theDriverInfo["speed"] {
-                let speedValue = speed as! Double * 0.1     // 单位0.1km/h
+//                let speedValue = speed as! Double * 0.1     // 单位0.1km/h
+                let speedValue = speed as! Double     // 单位km/h
                 speedMeter.rate = speedValue / 260.0
                 speedMeter.text = String(format: "%.2f", speedValue);
             }
