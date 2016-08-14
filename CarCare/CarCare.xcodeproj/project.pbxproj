@@ -8,83 +8,51 @@
 
 /* Begin PBXBuildFile section */
 		F8013AA01C75C0E900B1F2FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013A9F1C75C0E900B1F2FC /* LoginViewController.swift */; };
-		F8013AA11C75C0E900B1F2FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013A9F1C75C0E900B1F2FC /* LoginViewController.swift */; };
 		F8013AA31C769FE100B1F2FC /* LoginHttpTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013AA21C769FE100B1F2FC /* LoginHttpTask.swift */; };
-		F8013AA41C769FE100B1F2FC /* LoginHttpTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013AA21C769FE100B1F2FC /* LoginHttpTask.swift */; };
 		F8013AA81C76AF2200B1F2FC /* CarStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013AA71C76AF2200B1F2FC /* CarStatusViewController.swift */; };
-		F8013AA91C76AF2200B1F2FC /* CarStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013AA71C76AF2200B1F2FC /* CarStatusViewController.swift */; };
-		F8013AAA1C76AF2200B1F2FC /* CarStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013AA71C76AF2200B1F2FC /* CarStatusViewController.swift */; };
 		F8013AB41C76B07C00B1F2FC /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F8013AB11C76B07C00B1F2FC /* GCDAsyncSocket.m */; };
-		F8013AB51C76B07C00B1F2FC /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F8013AB11C76B07C00B1F2FC /* GCDAsyncSocket.m */; };
-		F8013AB61C76B07C00B1F2FC /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F8013AB11C76B07C00B1F2FC /* GCDAsyncSocket.m */; };
 		F8013AB71C76B07C00B1F2FC /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F8013AB31C76B07C00B1F2FC /* MSWeakTimer.m */; };
-		F8013AB81C76B07C00B1F2FC /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F8013AB31C76B07C00B1F2FC /* MSWeakTimer.m */; };
-		F8013AB91C76B07C00B1F2FC /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F8013AB31C76B07C00B1F2FC /* MSWeakTimer.m */; };
 		F8013ABE1C76B13100B1F2FC /* CocoaMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABB1C76B13100B1F2FC /* CocoaMQTT.swift */; };
-		F8013ABF1C76B13100B1F2FC /* CocoaMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABB1C76B13100B1F2FC /* CocoaMQTT.swift */; };
-		F8013AC01C76B13100B1F2FC /* CocoaMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABB1C76B13100B1F2FC /* CocoaMQTT.swift */; };
 		F8013AC11C76B13100B1F2FC /* CocoaMQTTFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABC1C76B13100B1F2FC /* CocoaMQTTFrame.swift */; };
-		F8013AC21C76B13100B1F2FC /* CocoaMQTTFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABC1C76B13100B1F2FC /* CocoaMQTTFrame.swift */; };
-		F8013AC31C76B13100B1F2FC /* CocoaMQTTFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABC1C76B13100B1F2FC /* CocoaMQTTFrame.swift */; };
 		F8013AC41C76B13100B1F2FC /* CocoaMQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABD1C76B13100B1F2FC /* CocoaMQTTMessage.swift */; };
-		F8013AC51C76B13100B1F2FC /* CocoaMQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABD1C76B13100B1F2FC /* CocoaMQTTMessage.swift */; };
-		F8013AC61C76B13100B1F2FC /* CocoaMQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8013ABD1C76B13100B1F2FC /* CocoaMQTTMessage.swift */; };
 		F8220CDE1C7714ED00269012 /* CASplitedCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8220CDD1C7714ED00269012 /* CASplitedCircleLayer.swift */; };
-		F8220CDF1C7714ED00269012 /* CASplitedCircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8220CDD1C7714ED00269012 /* CASplitedCircleLayer.swift */; };
 		F8233B751C914F4C0084A665 /* UnitParamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8233B741C914F4C0084A665 /* UnitParamViewController.swift */; };
-		F8233B761C914F4C0084A665 /* UnitParamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8233B741C914F4C0084A665 /* UnitParamViewController.swift */; };
-		F8233B851C918ED50084A665 /* BiMoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8233B831C918ED50084A665 /* BiMoFramework.framework */; };
+		F85ADB431D6094D200208DB0 /* MoviePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85ADB421D6094D200208DB0 /* MoviePlayerViewController.swift */; };
+		F85ADB571D60AABB00208DB0 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB561D60AABB00208DB0 /* libiconv.tbd */; };
+		F85ADB591D60AAC300208DB0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB581D60AAC300208DB0 /* libz.tbd */; };
+		F85ADB5B1D60AAE700208DB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB5A1D60AAE700208DB0 /* CoreGraphics.framework */; };
+		F85ADB5D1D60AAF100208DB0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB5C1D60AAF100208DB0 /* MediaPlayer.framework */; };
+		F85ADB5F1D60AAFD00208DB0 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB5E1D60AAFD00208DB0 /* CoreAudio.framework */; };
+		F85ADB611D60AB1200208DB0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB601D60AB1200208DB0 /* AudioToolbox.framework */; };
+		F85ADB631D60AB1B00208DB0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB621D60AB1B00208DB0 /* Accelerate.framework */; };
+		F85ADB651D60AB2500208DB0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB641D60AB2500208DB0 /* QuartzCore.framework */; };
+		F85ADB671D60AB2E00208DB0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB661D60AB2E00208DB0 /* OpenGLES.framework */; };
+		F85ADB7C1D60C01D00208DB0 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB761D60C01D00208DB0 /* libavcodec.a */; };
+		F85ADB7D1D60C01D00208DB0 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB771D60C01D00208DB0 /* libavformat.a */; };
+		F85ADB7E1D60C01D00208DB0 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB781D60C01D00208DB0 /* libavutil.a */; };
+		F85ADB7F1D60C01D00208DB0 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB791D60C01D00208DB0 /* libswresample.a */; };
+		F85ADB801D60C01D00208DB0 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB7A1D60C01D00208DB0 /* libswscale.a */; };
+		F85ADB811D60C01D00208DB0 /* libkxmovie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F85ADB7B1D60C01D00208DB0 /* libkxmovie.a */; };
 		F88385C61C76DDE700DA1875 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C51C76DDE700DA1875 /* DoorViewController.swift */; };
-		F88385C71C76DDE700DA1875 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C51C76DDE700DA1875 /* DoorViewController.swift */; };
 		F88385C91C76F20700DA1875 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C81C76F20700DA1875 /* DashboardViewController.swift */; };
-		F88385CA1C76F20700DA1875 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88385C81C76F20700DA1875 /* DashboardViewController.swift */; };
 		F891BC6B1C925D8500504F13 /* SpeedPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891BC6A1C925D8500504F13 /* SpeedPanel.swift */; };
-		F891BC6C1C925D8500504F13 /* SpeedPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891BC6A1C925D8500504F13 /* SpeedPanel.swift */; };
 		F891BC6E1C92965300504F13 /* ReplicatorSpeedMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891BC6D1C92965300504F13 /* ReplicatorSpeedMeter.swift */; };
-		F891BC6F1C92965300504F13 /* ReplicatorSpeedMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891BC6D1C92965300504F13 /* ReplicatorSpeedMeter.swift */; };
 		F891BC711C92A79400504F13 /* SpeedMeterGridMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891BC701C92A79400504F13 /* SpeedMeterGridMask.swift */; };
-		F891BC721C92A79400504F13 /* SpeedMeterGridMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891BC701C92A79400504F13 /* SpeedMeterGridMask.swift */; };
 		F8B5CA6A1C75BC0200D74569 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B5CA691C75BC0200D74569 /* AppDelegate.swift */; };
 		F8B5CA6C1C75BC0200D74569 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B5CA6B1C75BC0200D74569 /* ViewController.swift */; };
 		F8B5CA6F1C75BC0200D74569 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CA6D1C75BC0200D74569 /* Main.storyboard */; };
 		F8B5CA721C75BC0200D74569 /* CarCare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8B5CA701C75BC0200D74569 /* CarCare.xcdatamodeld */; };
 		F8B5CA741C75BC0200D74569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CA731C75BC0200D74569 /* Assets.xcassets */; };
 		F8B5CA771C75BC0200D74569 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CA751C75BC0200D74569 /* LaunchScreen.storyboard */; };
-		F8B5CA821C75BC0300D74569 /* CarCareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B5CA811C75BC0300D74569 /* CarCareTests.swift */; };
-		F8B5CA8D1C75BC0300D74569 /* CarCareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B5CA8C1C75BC0300D74569 /* CarCareUITests.swift */; };
 		F8B5CA9C1C75BC8F00D74569 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CA9A1C75BC8F00D74569 /* Login.storyboard */; };
-		F8B5CA9D1C75BC8F00D74569 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B5CA9A1C75BC8F00D74569 /* Login.storyboard */; };
 		F8DF7C1A1C7BEECE002C66B1 /* SpeedoMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF7C191C7BEECE002C66B1 /* SpeedoMeterViewController.swift */; };
-		F8DF7C1B1C7BEECE002C66B1 /* SpeedoMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DF7C191C7BEECE002C66B1 /* SpeedoMeterViewController.swift */; };
 		F8E148C11C9529E8006C0DEF /* BMOCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E148C01C9529E8006C0DEF /* BMOCSegmentedControl.m */; };
 		F8F7CE0B1C902FED0087C392 /* StatusPanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE091C902FED0087C392 /* StatusPanel.storyboard */; };
-		F8F7CE0C1C902FED0087C392 /* StatusPanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE091C902FED0087C392 /* StatusPanel.storyboard */; };
 		F8F7CE0F1C90305C0087C392 /* SpeedMeter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE0D1C90305C0087C392 /* SpeedMeter.storyboard */; };
-		F8F7CE101C90305C0087C392 /* SpeedMeter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE0D1C90305C0087C392 /* SpeedMeter.storyboard */; };
 		F8F7CE141C9031930087C392 /* Android.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE131C9031930087C392 /* Android.storyboard */; };
-		F8F7CE151C9031930087C392 /* Android.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F7CE131C9031930087C392 /* Android.storyboard */; };
 		F8F7CE171C903E390087C392 /* CarStatusFrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7CE161C903E390087C392 /* CarStatusFrameworkViewController.swift */; };
-		F8F7CE181C903E390087C392 /* CarStatusFrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7CE161C903E390087C392 /* CarStatusFrameworkViewController.swift */; };
 		F8F7CE1D1C903FDB0087C392 /* CarParamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7CE1C1C903FDB0087C392 /* CarParamTableViewController.swift */; };
-		F8F7CE1E1C903FDB0087C392 /* CarParamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7CE1C1C903FDB0087C392 /* CarParamTableViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F8B5CA7E1C75BC0300D74569 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F8B5CA5E1C75BC0200D74569 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F8B5CA651C75BC0200D74569;
-			remoteInfo = CarCare;
-		};
-		F8B5CA891C75BC0300D74569 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F8B5CA5E1C75BC0200D74569 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F8B5CA651C75BC0200D74569;
-			remoteInfo = CarCare;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F8013A9F1C75C0E900B1F2FC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +72,27 @@
 		F8220CDD1C7714ED00269012 /* CASplitedCircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CASplitedCircleLayer.swift; sourceTree = "<group>"; };
 		F8233B741C914F4C0084A665 /* UnitParamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitParamViewController.swift; sourceTree = "<group>"; };
 		F8233B831C918ED50084A665 /* BiMoFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BiMoFramework.framework; sourceTree = "<group>"; };
+		F85ADB421D6094D200208DB0 /* MoviePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePlayerViewController.swift; sourceTree = "<group>"; };
+		F85ADB561D60AABB00208DB0 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		F85ADB581D60AAC300208DB0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F85ADB5A1D60AAE700208DB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F85ADB5C1D60AAF100208DB0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F85ADB5E1D60AAFD00208DB0 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		F85ADB601D60AB1200208DB0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F85ADB621D60AB1B00208DB0 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F85ADB641D60AB2500208DB0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F85ADB661D60AB2E00208DB0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F85ADB761D60C01D00208DB0 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
+		F85ADB771D60C01D00208DB0 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
+		F85ADB781D60C01D00208DB0 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
+		F85ADB791D60C01D00208DB0 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
+		F85ADB7A1D60C01D00208DB0 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		F85ADB7B1D60C01D00208DB0 /* libkxmovie.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libkxmovie.a; sourceTree = "<group>"; };
+		F85ADB821D60C05200208DB0 /* KxAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxAudioManager.h; sourceTree = "<group>"; };
+		F85ADB831D60C05200208DB0 /* KxMovieDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMovieDecoder.h; sourceTree = "<group>"; };
+		F85ADB841D60C05200208DB0 /* KxMovieGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMovieGLView.h; sourceTree = "<group>"; };
+		F85ADB851D60C05200208DB0 /* KxMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMovieViewController.h; sourceTree = "<group>"; };
+		F85ADB861D60C05200208DB0 /* KxLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxLogger.h; sourceTree = "<group>"; };
 		F88385C51C76DDE700DA1875 /* DoorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoorViewController.swift; sourceTree = "<group>"; };
 		F88385C81C76F20700DA1875 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		F891BC6A1C925D8500504F13 /* SpeedPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedPanel.swift; sourceTree = "<group>"; };
@@ -117,10 +106,8 @@
 		F8B5CA731C75BC0200D74569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8B5CA761C75BC0200D74569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8B5CA781C75BC0200D74569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8B5CA7D1C75BC0300D74569 /* CarCareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarCareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B5CA811C75BC0300D74569 /* CarCareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCareTests.swift; sourceTree = "<group>"; };
 		F8B5CA831C75BC0300D74569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8B5CA881C75BC0300D74569 /* CarCareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarCareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B5CA8C1C75BC0300D74569 /* CarCareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCareUITests.swift; sourceTree = "<group>"; };
 		F8B5CA8E1C75BC0300D74569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8B5CA9B1C75BC8F00D74569 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -139,21 +126,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8B5CA7A1C75BC0300D74569 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8B5CA851C75BC0300D74569 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F8233B851C918ED50084A665 /* BiMoFramework.framework in Frameworks */,
+				F85ADB7F1D60C01D00208DB0 /* libswresample.a in Frameworks */,
+				F85ADB671D60AB2E00208DB0 /* OpenGLES.framework in Frameworks */,
+				F85ADB651D60AB2500208DB0 /* QuartzCore.framework in Frameworks */,
+				F85ADB7D1D60C01D00208DB0 /* libavformat.a in Frameworks */,
+				F85ADB631D60AB1B00208DB0 /* Accelerate.framework in Frameworks */,
+				F85ADB611D60AB1200208DB0 /* AudioToolbox.framework in Frameworks */,
+				F85ADB5F1D60AAFD00208DB0 /* CoreAudio.framework in Frameworks */,
+				F85ADB7E1D60C01D00208DB0 /* libavutil.a in Frameworks */,
+				F85ADB801D60C01D00208DB0 /* libswscale.a in Frameworks */,
+				F85ADB5D1D60AAF100208DB0 /* MediaPlayer.framework in Frameworks */,
+				F85ADB5B1D60AAE700208DB0 /* CoreGraphics.framework in Frameworks */,
+				F85ADB811D60C01D00208DB0 /* libkxmovie.a in Frameworks */,
+				F85ADB7C1D60C01D00208DB0 /* libavcodec.a in Frameworks */,
+				F85ADB591D60AAC300208DB0 /* libz.tbd in Frameworks */,
+				F85ADB571D60AABB00208DB0 /* libiconv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +173,16 @@
 		F8013AAB1C76B05600B1F2FC /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				F85ADB741D60C01D00208DB0 /* kxmovie */,
+				F85ADB661D60AB2E00208DB0 /* OpenGLES.framework */,
+				F85ADB641D60AB2500208DB0 /* QuartzCore.framework */,
+				F85ADB621D60AB1B00208DB0 /* Accelerate.framework */,
+				F85ADB601D60AB1200208DB0 /* AudioToolbox.framework */,
+				F85ADB5E1D60AAFD00208DB0 /* CoreAudio.framework */,
+				F85ADB5C1D60AAF100208DB0 /* MediaPlayer.framework */,
+				F85ADB5A1D60AAE700208DB0 /* CoreGraphics.framework */,
+				F85ADB581D60AAC300208DB0 /* libz.tbd */,
+				F85ADB561D60AABB00208DB0 /* libiconv.tbd */,
 				F8233B831C918ED50084A665 /* BiMoFramework.framework */,
 				F8013AAC1C76B05600B1F2FC /* MQTT */,
 			);
@@ -221,6 +218,32 @@
 			name = "控件";
 			sourceTree = "<group>";
 		};
+		F85ADB741D60C01D00208DB0 /* kxmovie */ = {
+			isa = PBXGroup;
+			children = (
+				F85ADB821D60C05200208DB0 /* KxAudioManager.h */,
+				F85ADB831D60C05200208DB0 /* KxMovieDecoder.h */,
+				F85ADB841D60C05200208DB0 /* KxMovieGLView.h */,
+				F85ADB851D60C05200208DB0 /* KxMovieViewController.h */,
+				F85ADB861D60C05200208DB0 /* KxLogger.h */,
+				F85ADB751D60C01D00208DB0 /* FFmpeg */,
+				F85ADB7B1D60C01D00208DB0 /* libkxmovie.a */,
+			);
+			path = kxmovie;
+			sourceTree = "<group>";
+		};
+		F85ADB751D60C01D00208DB0 /* FFmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				F85ADB761D60C01D00208DB0 /* libavcodec.a */,
+				F85ADB771D60C01D00208DB0 /* libavformat.a */,
+				F85ADB781D60C01D00208DB0 /* libavutil.a */,
+				F85ADB791D60C01D00208DB0 /* libswresample.a */,
+				F85ADB7A1D60C01D00208DB0 /* libswscale.a */,
+			);
+			path = FFmpeg;
+			sourceTree = "<group>";
+		};
 		F8B5CA5D1C75BC0200D74569 = {
 			isa = PBXGroup;
 			children = (
@@ -235,8 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				F8B5CA661C75BC0200D74569 /* 车辆监控.app */,
-				F8B5CA7D1C75BC0300D74569 /* CarCareTests.xctest */,
-				F8B5CA881C75BC0300D74569 /* CarCareUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -295,6 +316,7 @@
 				F8F7CE161C903E390087C392 /* CarStatusFrameworkViewController.swift */,
 				F8F7CE1C1C903FDB0087C392 /* CarParamTableViewController.swift */,
 				F8233B741C914F4C0084A665 /* UnitParamViewController.swift */,
+				F85ADB421D6094D200208DB0 /* MoviePlayerViewController.swift */,
 			);
 			name = "模仿安卓的界面";
 			sourceTree = "<group>";
@@ -319,42 +341,6 @@
 			productReference = F8B5CA661C75BC0200D74569 /* 车辆监控.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F8B5CA7C1C75BC0300D74569 /* CarCareTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F8B5CA941C75BC0300D74569 /* Build configuration list for PBXNativeTarget "CarCareTests" */;
-			buildPhases = (
-				F8B5CA791C75BC0300D74569 /* Sources */,
-				F8B5CA7A1C75BC0300D74569 /* Frameworks */,
-				F8B5CA7B1C75BC0300D74569 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F8B5CA7F1C75BC0300D74569 /* PBXTargetDependency */,
-			);
-			name = CarCareTests;
-			productName = CarCareTests;
-			productReference = F8B5CA7D1C75BC0300D74569 /* CarCareTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F8B5CA871C75BC0300D74569 /* CarCareUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F8B5CA971C75BC0300D74569 /* Build configuration list for PBXNativeTarget "CarCareUITests" */;
-			buildPhases = (
-				F8B5CA841C75BC0300D74569 /* Sources */,
-				F8B5CA851C75BC0300D74569 /* Frameworks */,
-				F8B5CA861C75BC0300D74569 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F8B5CA8A1C75BC0300D74569 /* PBXTargetDependency */,
-			);
-			name = CarCareUITests;
-			productName = CarCareUITests;
-			productReference = F8B5CA881C75BC0300D74569 /* CarCareUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -368,14 +354,6 @@
 					F8B5CA651C75BC0200D74569 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 8NKW4X79C2;
-					};
-					F8B5CA7C1C75BC0300D74569 = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = F8B5CA651C75BC0200D74569;
-					};
-					F8B5CA871C75BC0300D74569 = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = F8B5CA651C75BC0200D74569;
 					};
 				};
 			};
@@ -393,8 +371,6 @@
 			projectRoot = "";
 			targets = (
 				F8B5CA651C75BC0200D74569 /* 车辆监控 */,
-				F8B5CA7C1C75BC0300D74569 /* CarCareTests */,
-				F8B5CA871C75BC0300D74569 /* CarCareUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -411,24 +387,6 @@
 				F8F7CE141C9031930087C392 /* Android.storyboard in Resources */,
 				F8F7CE0F1C90305C0087C392 /* SpeedMeter.storyboard in Resources */,
 				F8B5CA6F1C75BC0200D74569 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8B5CA7B1C75BC0300D74569 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8B5CA861C75BC0300D74569 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F8B5CA9D1C75BC8F00D74569 /* Login.storyboard in Resources */,
-				F8F7CE101C90305C0087C392 /* SpeedMeter.storyboard in Resources */,
-				F8F7CE151C9031930087C392 /* Android.storyboard in Resources */,
-				F8F7CE0C1C902FED0087C392 /* StatusPanel.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +410,7 @@
 				F8233B751C914F4C0084A665 /* UnitParamViewController.swift in Sources */,
 				F8F7CE171C903E390087C392 /* CarStatusFrameworkViewController.swift in Sources */,
 				F8F7CE1D1C903FDB0087C392 /* CarParamTableViewController.swift in Sources */,
+				F85ADB431D6094D200208DB0 /* MoviePlayerViewController.swift in Sources */,
 				F88385C91C76F20700DA1875 /* DashboardViewController.swift in Sources */,
 				F891BC6E1C92965300504F13 /* ReplicatorSpeedMeter.swift in Sources */,
 				F8DF7C1A1C7BEECE002C66B1 /* SpeedoMeterViewController.swift in Sources */,
@@ -464,60 +423,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8B5CA791C75BC0300D74569 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F8013AB51C76B07C00B1F2FC /* GCDAsyncSocket.m in Sources */,
-				F8013AC51C76B13100B1F2FC /* CocoaMQTTMessage.swift in Sources */,
-				F8013AC21C76B13100B1F2FC /* CocoaMQTTFrame.swift in Sources */,
-				F8013AA91C76AF2200B1F2FC /* CarStatusViewController.swift in Sources */,
-				F8013AA41C769FE100B1F2FC /* LoginHttpTask.swift in Sources */,
-				F8220CDF1C7714ED00269012 /* CASplitedCircleLayer.swift in Sources */,
-				F8013ABF1C76B13100B1F2FC /* CocoaMQTT.swift in Sources */,
-				F8B5CA821C75BC0300D74569 /* CarCareTests.swift in Sources */,
-				F8013AB81C76B07C00B1F2FC /* MSWeakTimer.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F8B5CA841C75BC0300D74569 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F8F7CE181C903E390087C392 /* CarStatusFrameworkViewController.swift in Sources */,
-				F8F7CE1E1C903FDB0087C392 /* CarParamTableViewController.swift in Sources */,
-				F891BC6C1C925D8500504F13 /* SpeedPanel.swift in Sources */,
-				F8233B761C914F4C0084A665 /* UnitParamViewController.swift in Sources */,
-				F8013AB61C76B07C00B1F2FC /* GCDAsyncSocket.m in Sources */,
-				F8013AC61C76B13100B1F2FC /* CocoaMQTTMessage.swift in Sources */,
-				F8DF7C1B1C7BEECE002C66B1 /* SpeedoMeterViewController.swift in Sources */,
-				F8013AC31C76B13100B1F2FC /* CocoaMQTTFrame.swift in Sources */,
-				F891BC6F1C92965300504F13 /* ReplicatorSpeedMeter.swift in Sources */,
-				F8013AAA1C76AF2200B1F2FC /* CarStatusViewController.swift in Sources */,
-				F8013AA11C75C0E900B1F2FC /* LoginViewController.swift in Sources */,
-				F8013AC01C76B13100B1F2FC /* CocoaMQTT.swift in Sources */,
-				F8B5CA8D1C75BC0300D74569 /* CarCareUITests.swift in Sources */,
-				F88385CA1C76F20700DA1875 /* DashboardViewController.swift in Sources */,
-				F8013AB91C76B07C00B1F2FC /* MSWeakTimer.m in Sources */,
-				F88385C71C76DDE700DA1875 /* DoorViewController.swift in Sources */,
-				F891BC721C92A79400504F13 /* SpeedMeterGridMask.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F8B5CA7F1C75BC0300D74569 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F8B5CA651C75BC0200D74569 /* 车辆监控 */;
-			targetProxy = F8B5CA7E1C75BC0300D74569 /* PBXContainerItemProxy */;
-		};
-		F8B5CA8A1C75BC0300D74569 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F8B5CA651C75BC0200D74569 /* 车辆监控 */;
-			targetProxy = F8B5CA891C75BC0300D74569 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F8B5CA6D1C75BC0200D74569 /* Main.storyboard */ = {
@@ -656,14 +562,22 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CarCare/lib",
 				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib/FFmpeg\"";
 				INFOPLIST_FILE = CarCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarCare/lib/kxmovie",
+					"$(PROJECT_DIR)/CarCare/lib/kxmovie/libs/FFmpeg",
+					"$(PROJECT_DIR)/CarCare/lib/kxmovie/FFmpeg",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.furture.carcare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CarCare/lib/MQTT/CarCare-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = lib/FFmpeg;
 			};
 			name = Debug;
 		};
@@ -679,79 +593,21 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CarCare/lib",
 				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/lib/FFmpeg\"";
 				INFOPLIST_FILE = CarCare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CarCare/lib/kxmovie",
+					"$(PROJECT_DIR)/CarCare/lib/kxmovie/libs/FFmpeg",
+					"$(PROJECT_DIR)/CarCare/lib/kxmovie/FFmpeg",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.furture.carcare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CarCare/lib/MQTT/CarCare-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		F8B5CA951C75BC0300D74569 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = CarCareTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhc.mibd.CarCareTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CarCare/lib/MQTT/CarCareTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarCare.app/CarCare";
-			};
-			name = Debug;
-		};
-		F8B5CA961C75BC0300D74569 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = CarCareTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhc.mibd.CarCareTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CarCare/lib/MQTT/CarCareTests-Bridging-Header.h";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarCare.app/CarCare";
-			};
-			name = Release;
-		};
-		F8B5CA981C75BC0300D74569 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/CarCare/lib",
-				);
-				INFOPLIST_FILE = CarCareUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhc.mibd.CarCareUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CarCare/lib/MQTT/CarCareUITests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TEST_TARGET_NAME = CarCare;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		F8B5CA991C75BC0300D74569 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/CarCare/lib",
-				);
-				INFOPLIST_FILE = CarCareUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dhc.mibd.CarCareUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CarCare/lib/MQTT/CarCareUITests-Bridging-Header.h";
-				TEST_TARGET_NAME = CarCare;
-				USES_XCTRUNNER = YES;
+				USER_HEADER_SEARCH_PATHS = lib/FFmpeg;
 			};
 			name = Release;
 		};
@@ -772,24 +628,6 @@
 			buildConfigurations = (
 				F8B5CA921C75BC0300D74569 /* Debug */,
 				F8B5CA931C75BC0300D74569 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F8B5CA941C75BC0300D74569 /* Build configuration list for PBXNativeTarget "CarCareTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F8B5CA951C75BC0300D74569 /* Debug */,
-				F8B5CA961C75BC0300D74569 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F8B5CA971C75BC0300D74569 /* Build configuration list for PBXNativeTarget "CarCareUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F8B5CA981C75BC0300D74569 /* Debug */,
-				F8B5CA991C75BC0300D74569 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

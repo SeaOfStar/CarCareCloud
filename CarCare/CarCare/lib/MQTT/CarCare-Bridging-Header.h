@@ -4,3 +4,4 @@
 
 #import "CocoaMQTT.h"
 #import <BiMoFramework/BiMoFramework.h>
+#import "KxMovieViewController.h"
